@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:padding="80dp">
+
+
+    <TextView
+        android:id="@+id/login-appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/loginImg"
+        android:layout_width="286dp"
+        android:layout_height="161dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/login_img" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:paddingTop="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/tf-email"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:importantForAccessibility="no"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/tf-password"
+        android:layout_width="298dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="loginHandler"
+        android:text="@string/login" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv-ifNoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/noAccount"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv-signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="signupHandler"
+            android:text="@string/signup"
+            android:textColor="#2196F3" />
+
+    </LinearLayout>
+
+</LinearLayout>
