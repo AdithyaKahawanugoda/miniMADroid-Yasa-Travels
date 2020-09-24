@@ -41,11 +41,7 @@
             android:parentActivityName=".AdminProfileActivity"/>
         <activity android:name=".ManageHotelsActivity"
             android:parentActivityName=".AdminProfileActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".AdminProfileActivity"
             android:theme="@style/AppTheme.noActionBar"/>
@@ -87,11 +83,11 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.noActionBar">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
