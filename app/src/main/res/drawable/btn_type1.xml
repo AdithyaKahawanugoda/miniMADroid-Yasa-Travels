@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    color gradient for cards in search results-->
+    <gradient android:startColor="#636FA4" android:endColor="#E8CBC0" />
+    <!--    custom made shape outline -->
+    <corners android:radius="5dp" />
+</shape>

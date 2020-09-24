@@ -1,0 +1,113 @@
+<resources>
+    <!--    Main Activity-->
+    <string name="app_name">Yasa Travels</string>
+    <!--    Login Activity-->
+    <string name="login">LogIn</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="noAccount">new to us, click here to</string>
+    <string name="signup">SignUp</string>
+    <!--    Search Activity-->
+    <string name="explore">Explore..</string>
+    <string name="searchHint">Search District....</string>
+    <string name="searchHotels">Hotels</string>
+    <string name="searchRides">Rides</string>
+    <string name="searchGuides">Tour Guides</string>
+    <string name="searchLocations">Places &amp; Things to do</string>
+    <string name="exploreDescription">Endless beaches, timeless ruins, welcoming people, oodles of elephants, rolling surf, cheap prices, fun trains, famous tea and flavourful food make Sri Lanka irresistible.</string>
+    <!--    Search Results-->
+    <string name="searchResultsHTopic">Search results for Hotels in "District_Name" </string>
+    <string name="searchResultsLTopic">Search results for Locations in "District_Name" </string>
+    <string name="searchResultsGTopic">Search results for Guides in "District_Name" </string>
+    <string name="searchResultsRTopic">Search results for Rides in "District_Name" </string>
+    <string name="contactBtn">Contact Us</string>
+    <string name="submit">Submit</string>
+    <!--    User Signup-->
+    <string name="signupHeading">Sign-Up with us...</string>
+    <string name="pp">Profile Picture</string>
+    <string name="reEnterPass">Re-enter Password</string>
+    <string name="phone">Contact no.</string>
+    <string name="useName">User Name</string>
+    <!--    User Home-->
+    <string name="logout">LogOut</string>
+    <string name="exploreUs">Explore with us..</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="contactus">Contact Us</string>
+    <string name="aboutus">About Us</string>
+    <string name="homeDescription">Set in the Indian Ocean in South Asia, the tropical island nation of Sri Lanka has a history dating back to the birth of time.  It is a place where the original soul of Buddhism still flourishes and where nature’s beauty remains abundant and unspoilt.Few places in the world can offer the traveller such a remarkable combination of stunning landscapes, pristine beaches, captivating cultural heritage and unique experiences within such a compact location.</string>
+    <!--    User Profile-->
+    <string name="updateDetails">Update Personal Details</string>
+    <!--    Admin Profile-->
+    <string name="dashboard">Admin Dashboard</string>
+    <string name="admin">Administrator</string>
+    <string name="aRides">Manage Rides</string>
+    <string name="aGuides">Manage Guides</string>
+    <string name="aLocations">Manage Locations</string>
+    <string name="aHotels">Manage Hotels</string>
+    <string name="aUsers">Manage Users</string>
+    <string name="signout">Sign Out</string>
+    <!--    About Us-->
+    <string name="aboutUs">About Us..</string>
+    <string name="aboutUsDes">We Yasa-Travels here to help you out to plan your holiday, vacation, trip to somewhere. With this app you can easily contact with available hotels and vehicles. Also you can contact an experienced tour guide to join with you for flexible prices to explore in your journey more. </string>
+    <string name="contactUs">Reach us..</string>
+    <string name="contacUsPhone">012-3456789</string>
+    <string name="contacUsEmail">yasatravels@gmail.com</string>
+    <string name="followUs">Follow us on -</string>
+    <!--    Manage-->
+    <string name="manageH">Manage Hotels</string>
+    <string name="manageG">Manage Guides</string>
+    <string name="manageR">Manage Rides</string>
+    <string name="manageL">Manage Locations</string>
+    <string name="addnew">Add New</string>
+    <!--    Spinner dropdown district container-->
+    <string-array name="Districts">
+        <item>Jaffna</item>
+        <item>Kilinochchi</item>
+        <item>Mannar</item>
+        <item>Mullaitivu</item>
+        <item>Vavuniya</item>
+        <item>Puttalam</item>
+        <item>Kurunegala</item>
+        <item>Gampaha</item>
+        <item>Colombo</item>
+        <item>Kalutara</item>
+        <item>Anuradhapura</item>
+        <item>Polonnaruwa</item>
+        <item>Matale</item>
+        <item>Kandy</item>
+        <item>Nuwara Eliya</item>
+        <item>Kegalle</item>
+        <item>Ratnapura</item>
+        <item>Trincomalee</item>
+        <item>Batticaloa</item>
+        <item>Ampara</item>
+        <item>Badulla</item>
+        <item>Monaragala</item>
+        <item>Hambantota</item>
+        <item>Matara</item>
+        <item>Galle</item>
+    </string-array>
+    <!--    Edit Hotel/Location/Ride/Guide-->
+    <string name="mgUploadImg">Add Image</string>
+    <string name="mgChangeImg">Change Image</string>
+    <string name="mgName">Name</string>
+    <string name="rideName">Driver\'s Name</string>
+    <string name="rideType">Ride Type</string>
+    <string name="rideVno">Vehicle No.</string>
+    <string name="rideCPkm">Cost per km.</string>
+    <string name="mgDistrict">District</string>
+    <string name="mgDescription">Description</string>
+    <string name="mgContact">Contact no.</string>
+    <string name="mgAddress">Address</string>
+    <string name="mgUpdateBtn">Update</string>
+    <string name="mgDeleteBtn">Remove</string>
+    <string name="regGuide">Edit Guides</string>
+    <string name="mgUsers">Manage Users</string>
+    <!--    Add Hotel/Location/Ride/Guide-->
+    <string name="saveBtn">Save</string>
+    <string name="addH">Add New Hotel</string>
+    <string name="addR">Add New Ride</string>
+    <string name="addL">Add New Location</string>
+    <string name="addG">Add New Guide</string>
+</resources>

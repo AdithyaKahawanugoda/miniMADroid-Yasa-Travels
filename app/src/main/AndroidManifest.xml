@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yasatravels">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddLocationActivity"
+            android:parentActivityName=".ManageLocationsActivity"></activity>
+        <activity android:name=".AddGuideActivity"
+            android:parentActivityName=".ManageGuidesActivity"/>
+        <activity android:name=".AddHotelActivity"
+            android:parentActivityName=".ManageHotelsActivity">
+
+        </activity>
+        <activity android:name=".AddRideActivity"
+            android:parentActivityName=".ManageRidesActivity"/>
+        <activity android:name=".ManageUsersActivity"
+            android:parentActivityName=".AdminProfileActivity"/>
+        <activity android:name=".EditGuideActivity"
+            android:parentActivityName=".ManageGuidesActivity"/>
+        <activity android:name=".EditRideActivity"
+            android:parentActivityName=".ManageRidesActivity"/>
+        <activity android:name=".EditLocationActivity"
+            android:parentActivityName=".ManageLocationsActivity"/>
+        <activity android:name=".EditHotelActivity"
+            android:parentActivityName=".ManageHotelsActivity">
+
+        </activity>
+        <activity android:name=".ManageGuidesActivity"
+            android:parentActivityName=".AdminProfileActivity"/>
+        <activity android:name=".ManageRidesActivity"
+            android:parentActivityName=".AdminProfileActivity"/>
+        <activity android:name=".ManageLocationsActivity"
+            android:parentActivityName=".AdminProfileActivity"/>
+        <activity android:name=".ManageHotelsActivity"
+            android:parentActivityName=".AdminProfileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminProfileActivity"
+            android:theme="@style/AppTheme.noActionBar"/>
+        <activity android:name=".AboutUsActivity"
+            android:parentActivityName=".UserHomeActivity"/>
+        <activity android:name=".UserProfileActivity"
+            android:parentActivityName=".UserHomeActivity"/>
+        <activity android:name=".UserHomeActivity"
+            android:theme="@style/AppTheme.noActionBar" >
+
+        </activity>
+        <activity android:name=".RideDetailsActivity"
+            android:parentActivityName=".ResultsRidesActivity"/>
+        <activity android:name=".LocationDetailsActivity"
+            android:parentActivityName=".ResultsLocationsActivity"/>
+        <activity android:name=".GuideDetailsActivity"
+            android:parentActivityName=".ResultsGuidesActivity"/>
+        <activity android:name=".HotelDetailsActivity"
+            android:parentActivityName=".ResultsHotelsActivity"/>
+        <activity android:name=".ResultsGuidesActivity"
+            android:parentActivityName=".SearchActivity"/>
+        <activity android:name=".ResultsRidesActivity"
+            android:parentActivityName=".SearchActivity"/>
+        <activity android:name=".ResultsLocationsActivity"
+            android:parentActivityName=".SearchActivity"/>
+        <activity android:name=".ResultsHotelsActivity"
+            android:parentActivityName=".SearchActivity">
+
+        </activity>
+        <activity android:name=".SignupActivity"
+            android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".SearchActivity"
+            android:parentActivityName=".UserHomeActivity">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.noActionBar">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

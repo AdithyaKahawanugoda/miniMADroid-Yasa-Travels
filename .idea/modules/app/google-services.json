@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "822499081536",
+    "firebase_url": "https://yasa-travels-7212f.firebaseio.com",
+    "project_id": "yasa-travels-7212f",
+    "storage_bucket": "yasa-travels-7212f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822499081536:android:944cdec1c856a4d003cea5",
+        "android_client_info": {
+          "package_name": "com.example.yasatravels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822499081536-bhjcv074p439pa3blu4o0f6puukt75ej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yasatravels",
+            "certificate_hash": "ae80a9a8e4d53cc57742ff096071116b49601299"
+          }
+        },
+        {
+          "client_id": "822499081536-o07b24fc30oh4kafc9aoddh1ikdiptqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVV99WGSaYeZqNQwvelHsv0AKW0GZJ1rQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822499081536-o07b24fc30oh4kafc9aoddh1ikdiptqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
