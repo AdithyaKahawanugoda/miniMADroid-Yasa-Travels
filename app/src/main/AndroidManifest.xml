@@ -14,7 +14,9 @@
         <activity android:name=".AddLocationActivity"
             android:parentActivityName=".ManageLocationsActivity"></activity>
         <activity android:name=".AddGuideActivity"
-            android:parentActivityName=".ManageGuidesActivity"/>
+            android:parentActivityName=".ManageGuidesActivity">
+
+        </activity>
         <activity android:name=".AddHotelActivity"
             android:parentActivityName=".ManageHotelsActivity">
 
@@ -34,7 +36,13 @@
 
         </activity>
         <activity android:name=".ManageGuidesActivity"
-            android:parentActivityName=".AdminProfileActivity"/>
+            android:parentActivityName=".AdminProfileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ManageRidesActivity"
             android:parentActivityName=".AdminProfileActivity"/>
         <activity android:name=".ManageLocationsActivity"
