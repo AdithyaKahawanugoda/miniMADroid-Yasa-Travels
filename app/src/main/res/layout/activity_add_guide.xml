@@ -11,12 +11,30 @@
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="match_parent"
+        android:layout_width="251dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/addG"
         android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/AddGuideImg"
+        android:layout_width="211dp"
+        android:layout_height="102dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_type_delete"
+        android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/tvName"
@@ -25,12 +43,12 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgName"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/tfAHname"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:id="@+id/AddGuide"
+        android:layout_width="378dp"
+        android:layout_height="52dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -47,12 +65,12 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/email"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/tfemail"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:id="@+id/AddGuideEmail"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -69,12 +87,12 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgDistrict"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <Spinner
-        android:id="@+id/spinnerHADistrict"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:id="@+id/AddGuideDestrict"
+        android:layout_width="373dp"
+        android:layout_height="35dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -89,12 +107,12 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgDescription"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/tfAHdescription"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:id="@+id/AddGuideDescription"
+        android:layout_width="379dp"
+        android:layout_height="68dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -111,12 +129,12 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgContact"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/tfAHcontact"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:id="@+id/AddGuideContact"
+        android:layout_width="377dp"
+        android:layout_height="47dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -127,31 +145,19 @@
         android:paddingRight="5dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="387dp"
+        android:layout_height="37dp">
 
         <Button
-            android:id="@+id/updateHbtn"
+            android:id="@+id/SaveGuideBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/mgUpdateBtn"
+            android:layout_marginEnd="160dp"
+            android:text="@string/saveBtn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.287"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/deleteHbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/mgDeleteBtn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.345"
-            app:layout_constraintStart_toEndOf="@+id/updateHbtn"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
