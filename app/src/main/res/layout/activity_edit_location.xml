@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/imgUploadAH"
-        android:layout_width="288dp"
-        android:layout_height="133dp"
+        android:layout_width="334dp"
+        android:layout_height="135dp"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         app:srcCompat="@drawable/btn_type_delete" />
@@ -124,9 +124,10 @@
             android:text="@string/mgUpdateBtn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintHorizontal_bias="0.263"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.171" />
 
         <Button
             android:id="@+id/deleteHbtn"
@@ -135,9 +136,10 @@
             android:text="@string/mgDeleteBtn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.345"
+            app:layout_constraintHorizontal_bias="0.305"
             app:layout_constraintStart_toEndOf="@+id/updateHbtn"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.171" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

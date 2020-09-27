@@ -11,14 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+<!--        //////////////////////////////////////////////////////////////-->
         <activity android:name=".AddLocationActivity"
-            android:parentActivityName=".ManageLocationsActivity"></activity>
+            android:parentActivityName=".ManageLocationsActivity">
+
+
+
+        </activity>
+
+<!--        ////////////////////////////////////////////////////////////////-->
         <activity android:name=".AddGuideActivity"
             android:parentActivityName=".ManageGuidesActivity"/>
         <activity android:name=".AddHotelActivity"
             android:parentActivityName=".ManageHotelsActivity">
-
         </activity>
+
         <activity android:name=".AddRideActivity"
             android:parentActivityName=".ManageRidesActivity"/>
         <activity android:name=".ManageUsersActivity"
@@ -27,8 +35,15 @@
             android:parentActivityName=".ManageGuidesActivity"/>
         <activity android:name=".EditRideActivity"
             android:parentActivityName=".ManageRidesActivity"/>
+
+<!--        ////////////////////////////////////////////////////-->
         <activity android:name=".EditLocationActivity"
-            android:parentActivityName=".ManageLocationsActivity"/>
+            android:parentActivityName=".ManageLocationsActivity">
+
+
+        </activity>
+
+<!--       /////////////////////////////////////////////////////// -->
         <activity android:name=".EditHotelActivity"
             android:parentActivityName=".ManageHotelsActivity">
 
@@ -37,8 +52,20 @@
             android:parentActivityName=".AdminProfileActivity"/>
         <activity android:name=".ManageRidesActivity"
             android:parentActivityName=".AdminProfileActivity"/>
+
+<!--        ////////////////////////////////////////////////////////-->
         <activity android:name=".ManageLocationsActivity"
-            android:parentActivityName=".AdminProfileActivity"/>
+            android:parentActivityName=".AdminProfileActivity">
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+
+        </activity>
+
+<!--     ///////////////////////////////////////////////////////////-->
+
         <activity android:name=".ManageHotelsActivity"
             android:parentActivityName=".AdminProfileActivity">
 
@@ -67,8 +94,15 @@
             android:parentActivityName=".SearchActivity"/>
         <activity android:name=".ResultsRidesActivity"
             android:parentActivityName=".SearchActivity"/>
+
+<!--        ////////////////////////////-->
         <activity android:name=".ResultsLocationsActivity"
-            android:parentActivityName=".SearchActivity"/>
+            android:parentActivityName=".SearchActivity">
+
+        </activity>
+
+<!--        -->
+
         <activity android:name=".ResultsHotelsActivity"
             android:parentActivityName=".SearchActivity">
 
@@ -85,11 +119,7 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.noActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
