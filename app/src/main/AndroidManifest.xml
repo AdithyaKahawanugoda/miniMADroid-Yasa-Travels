@@ -47,6 +47,8 @@
             android:theme="@style/AppTheme.noActionBar"/>
         <activity android:name=".AboutUsActivity"
             android:parentActivityName=".UserHomeActivity"/>
+        <activity android:name=".UpdateUserProfile"
+            android:parentActivityName=".UserProfileActivity"/>
         <activity android:name=".UserProfileActivity"
             android:parentActivityName=".UserHomeActivity"/>
         <activity android:name=".UserHomeActivity"
