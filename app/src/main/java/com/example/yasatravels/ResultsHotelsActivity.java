@@ -68,35 +68,5 @@ public class ResultsHotelsActivity extends AppCompatActivity {
     }
 
 
-//    public class CardViewHolder extends RecyclerView.ViewHolder{
-//
-//        View myView;
-//
-//        public CardViewHolder(@NonNull View itemView) {
-//            super(itemView);
-//
-//            myView = itemView;
-//        }
-//        public void setName(String name){
-//            TextView card_head = (TextView) myView.findViewById(R.id.cardHead);
-//            card_head.setText(name);
-//        }
-//
-//        public void setBody(String description){
-//            TextView card_body = (TextView) myView.findViewById(R.id.cardDesc);
-//            card_body.setText(description);
-//        }
-//
-//        public void setImage(Application ctx, String image){
-//            ImageView card_image = (ImageView) myView.findViewById(R.id.mhcardimg);
-//            Picasso.get().load(image).into(card_image);
-//            Glide.with(ctx).load(image).into(card_image);
-//            //Picasso.with(ctx).load(image).into(card_image);
-//
-//            Log.i("loadimage",image);
-//            // Log.i("imgviewId",card_image.toString());
-//        }
-//    }
-
 
 }
