@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "822499081536-59g9cqm7jh70vodn4r3t7t2bdpn3n01v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yasatravels",
+            "certificate_hash": "005669f9ea0eae0d15ce59bab8f31756a34ae9cc"
+          }
+        },
+        {
           "client_id": "822499081536-bhjcv074p439pa3blu4o0f6puukt75ej.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -28,7 +28,7 @@
 
     <ImageView
         android:id="@+id/imgUploadAH"
-        android:layout_width="288dp"
+        android:layout_width="match_parent"
         android:layout_height="133dp"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"

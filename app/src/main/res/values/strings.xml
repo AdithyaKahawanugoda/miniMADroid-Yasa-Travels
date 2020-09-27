@@ -2,11 +2,11 @@
     <!--    Main Activity-->
     <string name="app_name">Yasa Travels</string>
     <!--    Login Activity-->
-    <string name="login">LogIn</string>
-    <string name="email">EMAIL</string>
-    <string name="password">PASSWORD</string>
-    <string name="noAccount">new to us, click here to</string>
-    <string name="signup">SignUp</string>
+<!--    <string name="login">LogIn</string>-->
+<!--    <string name="email">EMAIL</string>-->
+<!--    <string name="password">PASSWORD</string>-->
+<!--    <string name="noAccount">new to us, click here to</string>-->
+<!--    <string name="signup">SignUp</string>-->
     <!--    Search Activity-->
     <string name="explore">Explore..</string>
     <string name="searchHint">Search District....</string>
@@ -23,21 +23,45 @@
     <string name="contactBtn">Contact Us</string>
     <string name="submit">Submit</string>
     <!--    User Signup-->
-    <string name="signupHeading">Sign-Up with us...</string>
-    <string name="pp">Profile Picture</string>
-    <string name="reEnterPass">Re-enter Password</string>
-    <string name="phone">Contact no.</string>
-    <string name="useName">User Name</string>
+    <!--    <string name="app_name">Yasa Travels</string>-->
+    <string name="page_title">Sign Up here !!!</string>
+    <string name="profile_picture">Profile picture :</string>
+    <string name="name">Name :</string>
+    <string name="address">Address :</string>
+    <string name="phone">Phone :</string>
+    <string name="email">Email :</string>
+    <string name="password">Password :</string>
+    <string name="re_enter_password">Re-enter password :</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">LogIn</string>
+    <string name="logintxt">Already have an account ?</string>
+    <string name="noAccount">New here ? Click to</string>
     <!--    User Home-->
-    <string name="logout">LogOut</string>
-    <string name="exploreUs">Explore with us..</string>
-    <string name="home">Home</string>
-    <string name="profile">Profile</string>
-    <string name="contactus">Contact Us</string>
-    <string name="aboutus">About Us</string>
+    <!--activity2 strings-->
+    <string name="explore_button">Explore</string>
+    <!--lorem text-->
+    <string name="home_descrpton1">The Undiscovered Country   You might say Sri Lanka has been hiding in plain sight. Scores of travellers have passed overhead on their way to someplace else, but years of uncertainty kept Sri Lanka off many itineraries.  Now, however, all that has changed. The country is moving forward quickly as more and more people discover its myriad charms. Lying between the more trodden parts of India and Southeast Asia, Sri Lanka\'s history, culture and natural beauty are undeniably alluring. It\'s the place you haven\'t been to yet, that you should.</string>
+    <string name="home_des2">So Much in So Little   Few places have as many Unesco World Heritage Sites (eight) packed into such a small area. Sri Lanka\'s 2000-plus years of culture can be discovered at ancient sites where legendary temples boast beautiful details even as they shelter in caves or perch on prominent peaks. More recent are evocative colonial fortresses, from Galle to Trincomalee.  Across the island, that thing that goes bump in the night might be an elephant heading to a favourite waterhole. Safari tours of Sri Lanka’s pleasantly relaxed national parks encounter leopards, water buffaloes, all manner of birds and a passel of primates.    It’s So Easy   Distances are short: see the sacred home of the world’s oldest living human-planted tree in the morning (Anuradhapura) and stand awestruck by the sight of hundreds of elephants gathering in the afternoon (Minneriya). Discover a favourite beach, meditate in a 2000-year-old temple, exchange smiles while strolling a mellow village, marvel at birds and wildflowers, try to keep count of the little dishes that come with your rice and curry. Wander past colonial gems in Colombo, then hit some epic surf.  Sri Lanka is spectacular, affordable and still often uncrowded. Now is the best time to discover it.</string>
+
+    <string name="home_logout">Log Out</string>
+    <string name="home_homeIcon">Home</string>
+    <string name="home_profleIcon">Profile</string>
+    <string name="home_contactUs">Contact Us</string>
+    <string name="home_aboutUs">About Us</string>
     <string name="homeDescription">Set in the Indian Ocean in South Asia, the tropical island nation of Sri Lanka has a history dating back to the birth of time.  It is a place where the original soul of Buddhism still flourishes and where nature’s beauty remains abundant and unspoilt.Few places in the world can offer the traveller such a remarkable combination of stunning landscapes, pristine beaches, captivating cultural heritage and unique experiences within such a compact location.</string>
     <!--    User Profile-->
-    <string name="updateDetails">Update Personal Details</string>
+    <!--lorem text-->
+    <string name="user_name">Josh Fernando</string>
+    <string name="user_phone">0719934085</string>
+    <string name="user_email">jossyf@gmail.com</string>
+
+    <string name="user_profileUpdate">Update Profile</string>
+    <string name="user_profileDelete">Delete Profile</string>
+    <string name="user_waterMark">Happy Travelling Josh !</string>
+
+    <!--update profile strings-->
+    <string name="user_saveProfileUpdates">Save Updates</string>
+
     <!--    Admin Profile-->
     <string name="dashboard">Admin Dashboard</string>
     <string name="admin">Administrator</string>
