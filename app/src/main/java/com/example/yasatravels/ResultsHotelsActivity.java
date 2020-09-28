@@ -20,6 +20,8 @@ import com.google.firebase.database.Query;
 
 public class ResultsHotelsActivity extends AppCompatActivity {
 
+    public static final String EXTRA_HRESULTID = "hotelID";
+
     private RecyclerView hotelList;
     private DatabaseReference dbRef;
     private Query query;
@@ -51,6 +53,17 @@ public class ResultsHotelsActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull CardViewHolder cardViewHolder, final int i, @NonNull CardData cardData) {
                 cardViewHolder.setDetails(getApplicationContext(), cardData.getName(), cardData.getDescription(), cardData.getImage());
+
+                cardViewHolder.myView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String dataId = getRef(i).getKey();
+                        // Log.i("detailsHanderCheck", "Touched" + dataId);
+                        Intent intent = new Intent(ResultsHotelsActivity.this, HotelDetailsActivity.class);
+                        intent.putExtra(EXTRA_HRESULTID, dataId);
+                        startActivity(intent);
+                    }
+                });
             }
 
             @NonNull

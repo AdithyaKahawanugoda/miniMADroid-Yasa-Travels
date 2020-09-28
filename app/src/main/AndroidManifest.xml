@@ -52,11 +52,7 @@
         </activity>
         <activity android:name=".ManageGuidesActivity"
             android:parentActivityName=".AdminProfileActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ManageRidesActivity"
             android:parentActivityName=".AdminProfileActivity"/>
@@ -64,11 +60,7 @@
 <!--        ////////////////////////////////////////////////////////-->
         <activity android:name=".ManageLocationsActivity"
             android:parentActivityName=".AdminProfileActivity">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
 
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
 
         </activity>
 
@@ -119,7 +111,11 @@
             android:parentActivityName=".LoginActivity"/>
         <activity android:name=".SearchActivity"
             android:parentActivityName=".UserHomeActivity">
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
 
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
