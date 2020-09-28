@@ -32,7 +32,13 @@
         <activity android:name=".AddRideActivity"
             android:parentActivityName=".ManageRidesActivity"/>
         <activity android:name=".ManageUsersActivity"
-            android:parentActivityName=".AdminProfileActivity"/>
+            android:parentActivityName=".AdminProfileActivity">
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+        </activity>
         <activity android:name=".EditGuideActivity"
             android:parentActivityName=".ManageGuidesActivity"/>
         <activity android:name=".EditRideActivity"
@@ -52,11 +58,7 @@
         </activity>
         <activity android:name=".ManageGuidesActivity"
             android:parentActivityName=".AdminProfileActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ManageRidesActivity"
             android:parentActivityName=".AdminProfileActivity"/>
@@ -64,11 +66,7 @@
 <!--        ////////////////////////////////////////////////////////-->
         <activity android:name=".ManageLocationsActivity"
             android:parentActivityName=".AdminProfileActivity">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
 
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
 
         </activity>
 
