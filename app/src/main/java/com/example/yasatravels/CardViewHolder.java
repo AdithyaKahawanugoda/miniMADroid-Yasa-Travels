@@ -34,4 +34,17 @@ public class CardViewHolder extends RecyclerView.ViewHolder {
         myView.setAnimation(animation);
 
     }
+
+    //for user management
+    public void setUserData(Context ctx, String name, String email, String image){
+        TextView cname = (TextView) myView.findViewById(R.id.mgUcName);
+        TextView cemail = (TextView) myView.findViewById(R.id.mgUcEmail);
+        ImageView cimage = (ImageView) myView.findViewById(R.id.mgUcImg);
+        cname.setText(name);
+        cemail.setText(email);
+        Picasso.get().load(image).into(cimage);
+
+        Animation animation = AnimationUtils.loadAnimation(ctx, android.R.anim.slide_in_left);
+        myView.setAnimation(animation);
+    }
 }

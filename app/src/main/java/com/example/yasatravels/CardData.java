@@ -4,20 +4,27 @@ import android.util.Log;
 
 public class CardData {
 
-    private String name,description,image;
+    private String name,description,image,email;
 
     public CardData() {
     }
 
-    public CardData(String name, String description, String image) {
+    public CardData(String name, String description, String image,String email) {
         this.name = name;
         this.description = description;
         this.image = image;
+        this.email = email;
 
     }
 
     public String getImage() {
         return image;
+    }
+
+    public String getEmail(){return email;}
+
+    public void setEmail(String email){
+        this.email = email;
     }
 
     public void setImage(String image) {
