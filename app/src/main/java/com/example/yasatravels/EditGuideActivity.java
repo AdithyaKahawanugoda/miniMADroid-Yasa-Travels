@@ -50,7 +50,7 @@ public class EditGuideActivity extends AppCompatActivity {
         viewImage = (ImageView) findViewById(R.id.EditGuideImg);
         name = (EditText) findViewById(R.id.EditGuideName);
         email = (EditText) findViewById(R.id.EditGuideMail);
-//        district = (Spinner) findViewById(R.id.EditGuideSpinner);
+//      district = (Spinner) findViewById(R.id.EditGuideSpinner);
         description = (EditText) findViewById(R.id.EditGuideDescription);
         contact = (EditText) findViewById(R.id.EditGuideContact);
 
@@ -130,35 +130,35 @@ public class EditGuideActivity extends AppCompatActivity {
             }
         });
 
-
-        //update details
+        //Update Guide Details
         updateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-//                updateRef = FirebaseDatabase.getInstance().getReference().child("Location");
-//                updateRef.addListenerForSingleValueEvent(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-//
-//                        if(snapshot.hasChild(id))
-//                        {
-//                            updateRef.child("name").setValue(name.getText().toString());
-                            //updateRef.child("email").setValue(name.getText().toString());
-//                            updateRef.child("description").setValue(description.getText().toString());
-//
+                updateRef = FirebaseDatabase.getInstance().getReference().child("Guide").child(id);
+                updateRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                        updateRef.child("name").setValue(name.getText().toString());
+                        updateRef.child("email").setValue(email.getText().toString());
+                        updateRef.child("description").setValue(description.getText().toString());
+                        updateRef.child("contactNo").setValue(contact.getText().toString());
 //                            updateRef.child("district").setValue(district);
 //                            updateRef.child("image").setValue(url);
-//                            updateRef.push();
-//                        }
-//
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError error) {
-//
-//                    }
-//                });
+
+                        Toast.makeText(getApplicationContext(), "Updated Succesfully", Toast.LENGTH_SHORT).show();
+
+                        Intent intent = new Intent(EditGuideActivity.this, ManageGuidesActivity.class);
+                        startActivity(intent);
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
             }
         });
