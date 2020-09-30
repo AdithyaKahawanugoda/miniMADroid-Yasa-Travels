@@ -31,7 +31,7 @@ public class AddGuideActivity extends AppCompatActivity implements AdapterView.O
     private static final int GALLERY_REQUEST = 1;
 
     private ImageView img;
-    private EditText txtname, txtcontact, txtdescription;
+    private EditText txtname, txtcontact, txtdescription,GuideEmail;
     private Button btnsave;
     private Uri imageUri = null;
     private Spinner spinner;
@@ -50,6 +50,7 @@ public class AddGuideActivity extends AppCompatActivity implements AdapterView.O
 
 
         txtname = (EditText) findViewById(R.id.AddGuide);
+        GuideEmail = (EditText) findViewById(R.id.AddGuideEmail);
         txtcontact = (EditText) findViewById(R.id.AddGuideContact);
         txtdescription = (EditText) findViewById(R.id.AddGuideDescription);
         img = (ImageView) findViewById(R.id.AddGuideImg);
@@ -111,11 +112,12 @@ public class AddGuideActivity extends AppCompatActivity implements AdapterView.O
         progress.setMessage("Uploading...");
         progress.show();
         final String name = txtname.getText().toString().trim();
+        final String email = GuideEmail.getText().toString().trim();
         final String description = txtdescription.getText().toString().trim();
         final Integer contactNo = Integer.parseInt(txtcontact.getText().toString().trim());
         final String district = item;
 
-        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(description) && !TextUtils.isEmpty(contactNo.toString()) && imageUri != null) {
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(description) && !TextUtils.isEmpty(contactNo.toString()) && imageUri != null) {
 
             final StorageReference filepath = mystorage.child("Guide_Images").child(System.currentTimeMillis() + "guideImg");
             filepath.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -131,6 +133,7 @@ public class AddGuideActivity extends AppCompatActivity implements AdapterView.O
                                     String url = uri.toString();
                                     DatabaseReference newGuide = mydatabase.push();
                                     newGuide.child("name").setValue(name);
+                                    newGuide.child("email").setValue(email);
                                     newGuide.child("description").setValue(description);
                                     newGuide.child("contactNo").setValue(contactNo);
                                     newGuide.child("district").setValue(district);
