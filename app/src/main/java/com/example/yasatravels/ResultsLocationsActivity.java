@@ -1,16 +1,16 @@
 package com.example.yasatravels;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -20,7 +20,7 @@ import com.google.firebase.database.Query;
 
 public class ResultsLocationsActivity extends AppCompatActivity {
 
-    private RecyclerView locationList;
+    private RecyclerView locationlist;
     private DatabaseReference dbRef;
     private Query query;
 
@@ -36,9 +36,9 @@ public class ResultsLocationsActivity extends AppCompatActivity {
         dbRef = FirebaseDatabase.getInstance().getReference().child("Location");
         query = dbRef.orderByChild("district").equalTo(input);
 
-        locationList = (RecyclerView) findViewById(R.id.recycleHotelResults);
-        locationList.setHasFixedSize(true);
-        locationList.setLayoutManager(new LinearLayoutManager(this));
+        locationlist = (RecyclerView) findViewById(R.id.resultLlist);
+        locationlist.setHasFixedSize(true);
+        locationlist.setLayoutManager(new LinearLayoutManager(this));
 
     }
 
@@ -64,6 +64,6 @@ public class ResultsLocationsActivity extends AppCompatActivity {
         };
 
         firebaseRecyclerAdapter.startListening();
-        locationList.setAdapter(firebaseRecyclerAdapter);
+        locationlist.setAdapter(firebaseRecyclerAdapter);
     }
 }

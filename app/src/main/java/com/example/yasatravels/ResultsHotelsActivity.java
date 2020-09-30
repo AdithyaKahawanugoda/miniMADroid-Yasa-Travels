@@ -20,6 +20,8 @@ import com.google.firebase.database.Query;
 
 public class ResultsHotelsActivity extends AppCompatActivity {
 
+    public static final String EXTRA_HRESULTID = "hotelID";
+
     private RecyclerView hotelList;
     private DatabaseReference dbRef;
     private Query query;
@@ -51,6 +53,17 @@ public class ResultsHotelsActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull CardViewHolder cardViewHolder, final int i, @NonNull CardData cardData) {
                 cardViewHolder.setDetails(getApplicationContext(), cardData.getName(), cardData.getDescription(), cardData.getImage());
+
+                cardViewHolder.myView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String dataId = getRef(i).getKey();
+                        // Log.i("detailsHanderCheck", "Touched" + dataId);
+                        Intent intent = new Intent(ResultsHotelsActivity.this, HotelDetailsActivity.class);
+                        intent.putExtra(EXTRA_HRESULTID, dataId);
+                        startActivity(intent);
+                    }
+                });
             }
 
             @NonNull
@@ -67,36 +80,6 @@ public class ResultsHotelsActivity extends AppCompatActivity {
         hotelList.setAdapter(firebaseRecyclerAdapter);
     }
 
-
-//    public class CardViewHolder extends RecyclerView.ViewHolder{
-//
-//        View myView;
-//
-//        public CardViewHolder(@NonNull View itemView) {
-//            super(itemView);
-//
-//            myView = itemView;
-//        }
-//        public void setName(String name){
-//            TextView card_head = (TextView) myView.findViewById(R.id.cardHead);
-//            card_head.setText(name);
-//        }
-//
-//        public void setBody(String description){
-//            TextView card_body = (TextView) myView.findViewById(R.id.cardDesc);
-//            card_body.setText(description);
-//        }
-//
-//        public void setImage(Application ctx, String image){
-//            ImageView card_image = (ImageView) myView.findViewById(R.id.mhcardimg);
-//            Picasso.get().load(image).into(card_image);
-//            Glide.with(ctx).load(image).into(card_image);
-//            //Picasso.with(ctx).load(image).into(card_image);
-//
-//            Log.i("loadimage",image);
-//            // Log.i("imgviewId",card_image.toString());
-//        }
-//    }
 
 
 }

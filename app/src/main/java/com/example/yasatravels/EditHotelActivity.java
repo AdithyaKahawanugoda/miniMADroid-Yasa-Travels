@@ -1,14 +1,14 @@
 package com.example.yasatravels;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +28,7 @@ public class EditHotelActivity extends AppCompatActivity {
     private Button updatebtn,deletebtn;
 
     String Name,Description,ContactNo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,10 +73,31 @@ public class EditHotelActivity extends AppCompatActivity {
         });
 
         deletebtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                deleteHotelEntry();
+                AlertDialog.Builder builder = new AlertDialog.Builder(EditHotelActivity.this);
+                builder.setTitle("Are you sure?");
+                builder.setMessage("Deleting this entry cannot rollback after confirmation");
+                builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dbRef.removeValue();
+                        dialog.dismiss();
+                        startActivity(new Intent(EditHotelActivity.this, ManageHotelsActivity.class));
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
+
         });
     }
 
@@ -121,12 +143,6 @@ public class EditHotelActivity extends AppCompatActivity {
         else{
             return false;
         }
-    }
-
-    public void deleteHotelEntry(){
-
-        dbRef.removeValue();
-        Toast.makeText(this,"Entry Deleted!",Toast.LENGTH_LONG).show();
     }
 
 

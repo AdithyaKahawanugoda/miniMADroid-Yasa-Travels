@@ -65,19 +65,18 @@ public class SearchActivity extends AppCompatActivity {
         if (option == rbH.getText()) {
             intent = new Intent(SearchActivity.this, ResultsHotelsActivity.class);
             Log.i("searchwindow", "HotelResults");
-        } else if (option == rbL.getText()) {
-            intent = new Intent(SearchActivity.this, ResultsLocationsActivity.class);
-            intent.putExtra(EXTRA_TEXTDISTRICT,district);
-            startActivity(intent);
-        } else if (option == rbR.getText()) {
-            intent = new Intent(SearchActivity.this, ResultsRidesActivity.class);
-            intent.putExtra(EXTRA_TEXTDISTRICT,district);
-            startActivity(intent);
         }
-        if (option == rbG.getText()) {
+        else if (option == rbL.getText()) {
+            intent = new Intent(SearchActivity.this, ResultsLocationsActivity.class);
+
+        }
+        else if (option == rbR.getText()) {
+            intent = new Intent(SearchActivity.this, ResultsRidesActivity.class);
+
+        }
+        else  {
+            Log.i("searchwindow", "GuidesSearching..");
             intent = new Intent(SearchActivity.this, ResultsGuidesActivity.class);
-            intent.putExtra(EXTRA_TEXTDISTRICT,district);
-            startActivity(intent);
         }
 
         intent.putExtra(EXTRA_TEXTDISTRICT, district);
