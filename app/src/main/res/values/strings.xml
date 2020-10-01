@@ -18,7 +18,7 @@
     <!--    Search Results-->
     <string name="searchResultsHTopic">Search results for Hotels in ~ </string>
     <string name="searchResultsLTopic">Search results for Locations in "District_Name" </string>
-    <string name="searchResultsGTopic">Search results for Guides in "District_Name" </string>
+    <string name="searchResultsGTopic">Search results for Guides in ~  </string>
     <string name="searchResultsRTopic">Search results for Rides in "District_Name" </string>
     <string name="contactBtn">Contact Us</string>
     <string name="submit">Submit</string>
