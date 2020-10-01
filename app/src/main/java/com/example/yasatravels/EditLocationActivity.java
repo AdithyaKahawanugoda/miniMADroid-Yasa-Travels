@@ -33,7 +33,7 @@ public class EditLocationActivity extends AppCompatActivity {
     Spinner district;
     Button updateBtn, removeBtn;
     String id, imageUrl;
-//    private FirebaseStorage mStorageRef;
+    private FirebaseStorage mStorageRef;
     private DatabaseReference dbRef, deleteRef, updateRef;
 
     @Override
@@ -41,7 +41,7 @@ public class EditLocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_location);
 
-//        mStorageRef = FirebaseStorage.getInstance();
+        mStorageRef = FirebaseStorage.getInstance();
 
         updateBtn = (Button)findViewById(R.id.updateHbtn);
         removeBtn = (Button)findViewById(R.id.deleteHbtn);
