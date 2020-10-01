@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +27,8 @@ public class ResultsHotelsActivity extends AppCompatActivity {
     private DatabaseReference dbRef;
     private Query query;
 
+    private TextView distName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,9 @@ public class ResultsHotelsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String input = intent.getStringExtra(SearchActivity.EXTRA_TEXTDISTRICT);
         Log.i("ResultsHotel", input);
+
+        distName = (TextView) findViewById(R.id.tvcusinputdist);
+        distName.setText(input);
 
         dbRef = FirebaseDatabase.getInstance().getReference().child("Hotel");
         query = dbRef.orderByChild("district").equalTo(input);

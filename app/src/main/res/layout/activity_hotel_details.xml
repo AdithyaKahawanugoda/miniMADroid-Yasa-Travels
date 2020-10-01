@@ -33,23 +33,45 @@
         android:id="@+id/tvHotelDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="hotel description"
         android:textAlignment="viewStart"
         android:textColor="#000000"
-        android:textStyle="italic" />
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_margin="20dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </TableLayout>
 
     <Button
         android:id="@+id/hotelcontact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/btn_type1"
         android:onClick="contactHandler"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
-        android:text="@string/contactBtn"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"/>
+        android:text="@string/contactBtn" />
 
 
 </LinearLayout>

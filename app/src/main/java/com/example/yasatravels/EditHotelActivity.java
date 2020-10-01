@@ -24,10 +24,10 @@ public class EditHotelActivity extends AppCompatActivity {
 
     private DatabaseReference dbRef;
 
-    private EditText name,desc,contact;
+    private EditText name,desc,contact,breakfast,lunch,dinner,doublebed,singlebed;
     private Button updatebtn,deletebtn;
 
-    String Name,Description,ContactNo;
+    String Name,Description,ContactNo,Breakfast,Lunch,Dinner,Singleb,Doubleb;
 
 
     @Override
@@ -44,6 +44,12 @@ public class EditHotelActivity extends AppCompatActivity {
         desc = (EditText) findViewById(R.id.tfAHdescription);
         contact = (EditText) findViewById(R.id.tfAHcontact);
 
+        breakfast = (EditText) findViewById(R.id.tfEHcbreakfast);
+        lunch = (EditText) findViewById(R.id.tfEHclunch);
+        dinner = (EditText) findViewById(R.id.tfEHcdinner);
+        singlebed = (EditText) findViewById(R.id.tfEHcsingleB);
+        doublebed = (EditText) findViewById(R.id.tfEHcdoubleB);
+
         updatebtn = (Button) findViewById(R.id.updateHbtn);
         deletebtn = (Button) findViewById(R.id.deleteHbtn);
 
@@ -54,9 +60,21 @@ public class EditHotelActivity extends AppCompatActivity {
                  Description = snapshot.child("description").getValue().toString();
                  ContactNo = snapshot.child("contactNo").getValue().toString();
 
+                 Breakfast = snapshot.child("breakfast").getValue().toString();
+                 Lunch = snapshot.child("lunch").getValue().toString();
+                 Dinner = snapshot.child("dinner").getValue().toString();
+                 Singleb = snapshot.child("singleBed").getValue().toString();
+                 Doubleb = snapshot.child("doubleBed").getValue().toString();
+
                 name.setText(Name);
                 desc.setText(Description);
                 contact.setText(ContactNo);
+
+                breakfast.setText(Breakfast);
+                lunch.setText(Lunch);
+                dinner.setText(Dinner);
+                singlebed.setText(Singleb);
+                doublebed.setText(Doubleb);
             }
 
             @Override
@@ -103,13 +121,65 @@ public class EditHotelActivity extends AppCompatActivity {
 
     public void updateHotelDetails(){
 
-        if(isNameChanged() || isDescriptionChanged() || isContactNoChanged()){
+        if(isNameChanged() || isDescriptionChanged() || isContactNoChanged() || isCBChanged() || isCLChanged() || isCDChanged() || isCSRchanged() || isCDRchanged()){
             Toast.makeText(this,"Data Updating..",Toast.LENGTH_LONG).show();
         }
         else{
             Toast.makeText(this,"No changes have been made..",Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    private boolean isCSRchanged() {
+        if(!Singleb.equals(singlebed.getText().toString())){
+            dbRef.child("singleBed").setValue(singlebed.getText().toString());
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    private boolean isCDRchanged() {
+        if(!Doubleb.equals(doublebed.getText().toString())){
+            dbRef.child("doubleBed").setValue(doublebed.getText().toString());
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    private boolean isCDChanged() {
+        if(!Dinner.equals(dinner.getText().toString())){
+            dbRef.child("dinner").setValue(dinner.getText().toString());
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    private boolean isCLChanged() {
+        if(!Lunch.equals(lunch.getText().toString())){
+            dbRef.child("lunch").setValue(lunch.getText().toString());
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    private boolean isCBChanged(){
+        if(!Breakfast.equals(breakfast.getText().toString())){
+            dbRef.child("breakfast").setValue(breakfast.getText().toString());
+            return true;
+        }
+
+
+        else {
+            return false;
+        }
     }
 
     private boolean isContactNoChanged() {

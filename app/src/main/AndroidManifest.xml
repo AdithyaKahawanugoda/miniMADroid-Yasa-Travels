@@ -33,11 +33,7 @@
             android:parentActivityName=".ManageRidesActivity"/>
         <activity android:name=".ManageUsersActivity"
             android:parentActivityName=".AdminProfileActivity">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
 
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
         </activity>
         <activity android:name=".EditGuideActivity"
             android:parentActivityName=".ManageGuidesActivity"/>
@@ -74,7 +70,10 @@
 
         <activity android:name=".ManageHotelsActivity"
             android:parentActivityName=".AdminProfileActivity">
-
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
         </activity>
         <activity android:name=".AdminProfileActivity"
             android:theme="@style/AppTheme.noActionBar"/>

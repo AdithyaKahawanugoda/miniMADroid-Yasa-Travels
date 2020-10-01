@@ -30,7 +30,7 @@ public class AddHotelActivity extends AppCompatActivity implements AdapterView.O
     private static final int GALLERY_REQUEST = 1;
 
     private ImageView img;
-    private EditText txtname, txtcontact, txtdescription;
+    private EditText txtname, txtcontact, txtdescription, breakfast,lunch,dinner,doublebed,singlebed;
     private Button btnsave;
     private Uri imageUri = null;
     private Spinner spinner;
@@ -53,6 +53,13 @@ public class AddHotelActivity extends AppCompatActivity implements AdapterView.O
         txtdescription = (EditText) findViewById(R.id.tfAHdescription);
         img = (ImageView) findViewById(R.id.imgUploadAH);
         spinner = (Spinner) findViewById(R.id.spinnerHADistrict);
+
+        breakfast = (EditText) findViewById(R.id.tfAHcbreakfast);
+        lunch = (EditText) findViewById(R.id.tfAHclunch);
+        dinner = (EditText) findViewById(R.id.tfAHcdinner);
+        singlebed = (EditText) findViewById(R.id.tfAHcsingleB);
+        doublebed = (EditText) findViewById(R.id.tfAHcdoubleB);
+
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Districts, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -114,6 +121,12 @@ public class AddHotelActivity extends AppCompatActivity implements AdapterView.O
         final Integer contactNo = Integer.parseInt(txtcontact.getText().toString().trim());
         final String district = item;
 
+        final Integer Breakfast = Integer.parseInt(breakfast.getText().toString().trim());
+        final Integer Lunch = Integer.parseInt(lunch.getText().toString().trim());
+        final Integer Dinner = Integer.parseInt(dinner.getText().toString().trim());
+        final Integer Singlb = Integer.parseInt(singlebed.getText().toString().trim());
+        final Integer Doubleb = Integer.parseInt(doublebed.getText().toString().trim());
+
         if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(description) && !TextUtils.isEmpty(contactNo.toString()) && imageUri != null) {
 
             final StorageReference filepath = mystorage.child("Hotel_Images").child(System.currentTimeMillis() + "hotelImg");
@@ -134,6 +147,11 @@ public class AddHotelActivity extends AppCompatActivity implements AdapterView.O
                                     newHotel.child("contactNo").setValue(contactNo);
                                     newHotel.child("district").setValue(district);
                                     newHotel.child("image").setValue(url);
+                                    newHotel.child("breakfast").setValue(Breakfast);
+                                    newHotel.child("lunch").setValue(Lunch);
+                                    newHotel.child("dinner").setValue(Dinner);
+                                    newHotel.child("singleBed").setValue(Singlb);
+                                    newHotel.child("doubleBed").setValue(Doubleb);
                                 }
                             });
                         }
