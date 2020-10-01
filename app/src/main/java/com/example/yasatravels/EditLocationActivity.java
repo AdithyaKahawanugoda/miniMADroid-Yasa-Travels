@@ -133,28 +133,29 @@ public class EditLocationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-//                updateRef = FirebaseDatabase.getInstance().getReference().child("Location");
-//                updateRef.addListenerForSingleValueEvent(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-//
-//                        if(snapshot.hasChild(id))
-//                        {
-//                            updateRef.child("name").setValue(name.getText().toString());
-//                            updateRef.child("description").setValue(description.getText().toString());
-//                            updateRef.child("address").setValue(address.getText().toString());
+                updateRef = FirebaseDatabase.getInstance().getReference().child("Location").child(id);
+                updateRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                        updateRef.child("name").setValue(name.getText().toString());
+                        updateRef.child("description").setValue(description.getText().toString());
+                        updateRef.child("address").setValue(address.getText().toString());
 //                            updateRef.child("district").setValue(district);
 //                            updateRef.child("image").setValue(url);
-//                            updateRef.push();
-//                        }
-//
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError error) {
-//
-//                    }
-//                });
+
+                        Toast.makeText(getApplicationContext(), "Updated Succesfully", Toast.LENGTH_SHORT).show();
+
+                        Intent intent = new Intent(EditLocationActivity.this, ManageLocationsActivity.class);
+                        startActivity(intent);
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
             }
         });

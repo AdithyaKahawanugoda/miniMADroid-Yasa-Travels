@@ -2,11 +2,11 @@
     <!--    Main Activity-->
     <string name="app_name">Yasa Travels</string>
     <!--    Login Activity-->
-<!--    <string name="login">LogIn</string>-->
-<!--    <string name="email">EMAIL</string>-->
-<!--    <string name="password">PASSWORD</string>-->
-<!--    <string name="noAccount">new to us, click here to</string>-->
-<!--    <string name="signup">SignUp</string>-->
+    <!--    <string name="login">LogIn</string>-->
+    <!--    <string name="email">EMAIL</string>-->
+    <!--    <string name="password">PASSWORD</string>-->
+    <!--    <string name="noAccount">new to us, click here to</string>-->
+    <!--    <string name="signup">SignUp</string>-->
     <!--    Search Activity-->
     <string name="explore">Explore..</string>
     <string name="searchHint">Search District....</string>

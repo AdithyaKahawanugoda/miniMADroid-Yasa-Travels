@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:onClick="logout"
     android:orientation="vertical"
-    tools:context=".AdminProfileActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".AdminProfileActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -46,8 +47,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        tools:srcCompat="@tools:sample/avatars"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView9"
@@ -221,14 +222,13 @@
                 android:layout_height="40dp"
                 app:srcCompat="@drawable/logout_icon" />
 
-            <TextView
-                android:id="@+id/textView19"
+            <Button
+                android:id="@+id/logoutBtn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:paddingTop="10dp"
-                android:text="@string/signout"
-                android:textSize="18sp" />
+                android:layout_height="54dp"
+                android:onClick="logout"
+                android:text="LOGOUT" />
+
         </TableRow>
     </TableLayout>
 
