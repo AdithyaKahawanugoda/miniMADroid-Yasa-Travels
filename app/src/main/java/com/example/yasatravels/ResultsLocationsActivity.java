@@ -20,6 +20,8 @@ import com.google.firebase.database.Query;
 
 public class ResultsLocationsActivity extends AppCompatActivity {
 
+    public static final String EXTRA_HRESULTID = "locationID";
+
     private RecyclerView locationlist;
     private DatabaseReference dbRef;
     private Query query;
