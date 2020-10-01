@@ -1,24 +1,25 @@
+
 package com.example.yasatravels;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.annotation.NonNull;
+        import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+        import android.content.Intent;
+        import android.net.Uri;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.ImageView;
+        import android.widget.TextView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.squareup.picasso.Picasso;
+        import com.google.firebase.database.DataSnapshot;
+        import com.google.firebase.database.DatabaseError;
+        import com.google.firebase.database.DatabaseReference;
+        import com.google.firebase.database.FirebaseDatabase;
+        import com.google.firebase.database.ValueEventListener;
+        import com.squareup.picasso.Picasso;
 
-public class LocationDetailsActivity extends AppCompatActivity {
+public class LocationDetailsActivity extends AppCompatActivity{
 
     private DatabaseReference dbRef;
     private TextView name,description;
@@ -26,13 +27,16 @@ public class LocationDetailsActivity extends AppCompatActivity {
     private ImageView img;
 
     String Name,Description,ContactNo,ImgUrl;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location_details);
 
+
         Intent intent = getIntent();
-        String textId = intent.getStringExtra(ResultsLocationsActivity.EXTRA_HRESULTID);
+        String textId = intent.getStringExtra(ResultsGuidesActivity.EXTRA_GRESULTID);
 
         dbRef = FirebaseDatabase.getInstance().getReference("Location").child(textId);
         name = (TextView) findViewById(R.id.tvLocationName);
@@ -67,13 +71,8 @@ public class LocationDetailsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
     public void contactHandler(View view){}
 }
-
-
-
-
-
-
