@@ -11,124 +11,114 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AdminLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--        //////////////////////////////////////////////////////////////-->
-        <activity android:name=".AddLocationActivity"
-            android:parentActivityName=".ManageLocationsActivity">
-
-
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
-<!--        ////////////////////////////////////////////////////////////////-->
-        <activity android:name=".AddGuideActivity"
-            android:parentActivityName=".ManageGuidesActivity">
-
-        </activity>
-        <activity android:name=".AddHotelActivity"
-            android:parentActivityName=".ManageHotelsActivity">
-        </activity>
-
-        <activity android:name=".AddRideActivity"
-            android:parentActivityName=".ManageRidesActivity"/>
-        <activity android:name=".ManageUsersActivity"
-            android:parentActivityName=".AdminProfileActivity"/>
-        <activity android:name=".EditGuideActivity"
-            android:parentActivityName=".ManageGuidesActivity"/>
-        <activity android:name=".EditRideActivity"
-            android:parentActivityName=".ManageRidesActivity"/>
-
-<!--        ////////////////////////////////////////////////////-->
-        <activity android:name=".EditLocationActivity"
-            android:parentActivityName=".ManageLocationsActivity">
-
-
-        </activity>
-
-<!--       /////////////////////////////////////////////////////// -->
-        <activity android:name=".EditHotelActivity"
-            android:parentActivityName=".ManageHotelsActivity">
-
-        </activity>
-        <activity android:name=".ManageGuidesActivity"
-            android:parentActivityName=".AdminProfileActivity">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-        </activity>
-        <activity android:name=".ManageRidesActivity"
-            android:parentActivityName=".AdminProfileActivity"/>
-
-<!--        ////////////////////////////////////////////////////////-->
-        <activity android:name=".ManageLocationsActivity"
-            android:parentActivityName=".AdminProfileActivity">
-<!--                <intent-filter>-->
-<!--                        <action android:name="android.intent.action.MAIN" />-->
-<!---->
-<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                </intent-filter>-->
-
-        </activity>
-
-<!--     ///////////////////////////////////////////////////////////-->
-
-        <activity android:name=".ManageHotelsActivity"
+        <!-- ////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".AddLocationActivity"
+            android:parentActivityName=".ManageLocationsActivity"></activity> <!-- //////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".AddGuideActivity"
+            android:parentActivityName=".ManageGuidesActivity"></activity>
+        <activity
+            android:name=".AddHotelActivity"
+            android:parentActivityName=".ManageHotelsActivity"></activity>
+        <activity
+            android:name=".AddRideActivity"
+            android:parentActivityName=".ManageRidesActivity" />
+        <activity
+            android:name=".ManageUsersActivity"
+            android:parentActivityName=".AdminProfileActivity" />
+        <activity
+            android:name=".EditGuideActivity"
+            android:parentActivityName=".ManageGuidesActivity" />
+        <activity
+            android:name=".EditRideActivity"
+            android:parentActivityName=".ManageRidesActivity" /> <!-- //////////////////////////////////////////////////// -->
+        <activity
+            android:name=".EditLocationActivity"
+            android:parentActivityName=".ManageLocationsActivity"></activity> <!-- /////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".EditHotelActivity"
+            android:parentActivityName=".ManageHotelsActivity"></activity>
+        <activity
+            android:name=".ManageGuidesActivity"
             android:parentActivityName=".AdminProfileActivity">
 
         </activity>
-        <activity android:name=".AdminProfileActivity"
-            android:theme="@style/AppTheme.noActionBar"/>
-        <activity android:name=".AboutUsActivity"
-            android:parentActivityName=".UserHomeActivity"/>
-        <activity android:name=".UpdateUserProfile"
-            android:parentActivityName=".UserProfileActivity"/>
-        <activity android:name=".UserProfileActivity"
-            android:parentActivityName=".UserHomeActivity"/>
-        <activity android:name=".UserHomeActivity"
-            android:theme="@style/AppTheme.noActionBar" >
+        <activity
+            android:name=".ManageRidesActivity"
+            android:parentActivityName=".AdminProfileActivity" /> <!-- //////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ManageLocationsActivity"
+            android:parentActivityName=".AdminProfileActivity">
 
-        </activity>
-        <activity android:name=".RideDetailsActivity"
-            android:parentActivityName=".ResultsRidesActivity"/>
-        <activity android:name=".LocationDetailsActivity"
-            android:parentActivityName=".ResultsLocationsActivity"/>
-        <activity android:name=".GuideDetailsActivity"
-            android:parentActivityName=".ResultsGuidesActivity"/>
-        <activity android:name=".HotelDetailsActivity"
-            android:parentActivityName=".ResultsHotelsActivity"/>
-        <activity android:name=".ResultsGuidesActivity"
-            android:parentActivityName=".SearchActivity"/>
-        <activity android:name=".ResultsRidesActivity"
-            android:parentActivityName=".SearchActivity"/>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!--  -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
 
-<!--        ////////////////////////////-->
-        <activity android:name=".ResultsLocationsActivity"
-            android:parentActivityName=".SearchActivity">
-
-        </activity>
-
-<!--        -->
-
-        <activity android:name=".ResultsHotelsActivity"
-            android:parentActivityName=".SearchActivity">
-
-        </activity>
-        <activity android:name=".SignupActivity"
-            android:parentActivityName=".LoginActivity"/>
-        <activity android:name=".SearchActivity"
-            android:parentActivityName=".UserHomeActivity">
-
-        </activity>
+        </activity> <!-- /////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ManageHotelsActivity"
+            android:parentActivityName=".AdminProfileActivity"></activity>
+        <activity
+            android:name=".AdminProfileActivity"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:parentActivityName=".UserHomeActivity" />
+        <activity
+            android:name=".UpdateUserProfile"
+            android:parentActivityName=".UserProfileActivity" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:parentActivityName=".UserHomeActivity" />
+        <activity
+            android:name=".UserHomeActivity"
+            android:theme="@style/AppTheme.noActionBar"></activity>
+        <activity
+            android:name=".RideDetailsActivity"
+            android:parentActivityName=".ResultsRidesActivity" />
+        <activity
+            android:name=".LocationDetailsActivity"
+            android:parentActivityName=".ResultsLocationsActivity" />
+        <activity
+            android:name=".GuideDetailsActivity"
+            android:parentActivityName=".ResultsGuidesActivity" />
+        <activity
+            android:name=".HotelDetailsActivity"
+            android:parentActivityName=".ResultsHotelsActivity" />
+        <activity
+            android:name=".ResultsGuidesActivity"
+            android:parentActivityName=".SearchActivity" />
+        <activity
+            android:name=".ResultsRidesActivity"
+            android:parentActivityName=".SearchActivity" /> <!-- //////////////////////////// -->
+        <activity
+            android:name=".ResultsLocationsActivity"
+            android:parentActivityName=".SearchActivity"></activity> <!--  -->
+        <activity
+            android:name=".ResultsHotelsActivity"
+            android:parentActivityName=".SearchActivity"></activity>
+        <activity
+            android:name=".SignupActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".UserHomeActivity"></activity>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.noActionBar" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.noActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.noActionBar"></activity>
     </application>
 
 </manifest>
