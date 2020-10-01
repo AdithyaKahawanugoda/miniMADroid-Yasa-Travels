@@ -98,11 +98,7 @@
             android:parentActivityName=".ResultsRidesActivity"/>
         <activity android:name=".LocationDetailsActivity"
             android:parentActivityName=".ResultsLocationsActivity">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
 
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
 
 <!--                <intent-filter>-->
 <!--                        <action android:name="android.intent.action.MAIN" />-->
@@ -123,6 +119,12 @@
         <activity android:name=".ResultsLocationsActivity"
             android:parentActivityName=".SearchActivity">
 
+
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
 
         </activity>
 
