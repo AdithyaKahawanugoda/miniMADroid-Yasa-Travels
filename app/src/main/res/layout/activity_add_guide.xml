@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddGuideActivity"
+    android:background="@drawable/background1"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".AddGuideActivity">
 
 
     <TextView
@@ -16,6 +17,7 @@
         android:layout_margin="10dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/addG"
+        android:textColor="#070000"
         android:textSize="24sp" />
 
     <TextView
@@ -23,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Image"
+        android:textColor="#0B0000"
         android:textSize="18sp" />
 
     <ImageView
@@ -43,6 +46,7 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgName"
+        android:textColor="#120000"
         android:textSize="18sp" />
 
     <EditText
@@ -65,6 +69,7 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/email"
+        android:textColor="#0E0000"
         android:textSize="18sp" />
 
     <EditText
@@ -87,6 +92,7 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgDistrict"
+        android:textColor="#0E0101"
         android:textSize="18sp" />
 
     <Spinner
@@ -107,6 +113,7 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgDescription"
+        android:textColor="#090000"
         android:textSize="18sp" />
 
     <EditText
@@ -129,6 +136,7 @@
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgContact"
+        android:textColor="#100000"
         android:textSize="18sp" />
 
     <EditText

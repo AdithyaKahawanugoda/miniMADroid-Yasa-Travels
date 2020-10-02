@@ -42,7 +42,7 @@ public class ResultsGuidesActivity extends AppCompatActivity {
         dbRef = FirebaseDatabase.getInstance().getReference().child("Guide");
         query = dbRef.orderByChild("district").equalTo(input);
 
-        guidelist = (RecyclerView) findViewById(R.id.resultGlist);
+        guidelist = (RecyclerView) findViewById(R.id.resultLlist);
         guidelist.setHasFixedSize(true);
         guidelist.setLayoutManager(new LinearLayoutManager(this));
 

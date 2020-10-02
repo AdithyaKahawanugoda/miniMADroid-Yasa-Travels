@@ -16,6 +16,11 @@
         <activity android:name=".AddLocationActivity"
             android:parentActivityName=".ManageLocationsActivity">
 
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
 
 
 
@@ -100,6 +105,8 @@
             android:parentActivityName=".ResultsLocationsActivity">
 
 
+
+
 <!--                <intent-filter>-->
 <!--                        <action android:name="android.intent.action.MAIN" />-->
 
@@ -107,7 +114,10 @@
 <!--                </intent-filter>-->
         </activity>
         <activity android:name=".GuideDetailsActivity"
-            android:parentActivityName=".ResultsGuidesActivity"/>
+            android:parentActivityName=".ResultsGuidesActivity">
+
+
+        </activity>
         <activity android:name=".HotelDetailsActivity"
             android:parentActivityName=".ResultsHotelsActivity"/>
         <activity android:name=".ResultsGuidesActivity"
@@ -120,11 +130,6 @@
             android:parentActivityName=".SearchActivity">
 
 
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
 
         </activity>
 
@@ -142,6 +147,9 @@
 <!--                        <action android:name="android.intent.action.MAIN" />-->
 <!--                        <category android:name="android.intent.category.LAUNCHER" />-->
 <!--                </intent-filter>-->
+
+
+
         </activity>
         <activity
             android:name=".LoginActivity"
