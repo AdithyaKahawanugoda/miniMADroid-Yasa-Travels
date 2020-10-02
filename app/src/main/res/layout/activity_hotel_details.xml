@@ -1,77 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".HotelDetailsActivity"
     android:padding="10dp">
 
-    <TextView
-        android:id="@+id/tvHotelName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="horel name"
-        android:textColor="#000000"
-        android:textSize="30sp" />
-
-    <ImageView
-        android:id="@+id/ivHotelImg"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:transitionName="transition1"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="20dp"
-        />
-
-    <TextView
-        android:id="@+id/tvHotelDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="hotel description"
-        android:textAlignment="viewStart"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        android:layout_margin="20dp"/>
-
-    <TableLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TableRow
-            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvHotelName"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="horel name"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/ivHotelImg"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:transitionName="transition1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
             />
 
-        <TableRow
+        <TextView
+            android:id="@+id/tvHotelDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="hotel description"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_margin="20dp"/>
+
+
+
+        <TextView
+            android:id="@+id/textView29"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/avgCosts" />
 
-        <TableRow
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="119dp"
+            android:layout_margin="10dp">
 
-    </TableLayout>
+            <ImageView
+                android:id="@+id/ivbreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.204"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.189"
+                app:srcCompat="@drawable/ic_round_free_breakfast_24" />
 
-    <Button
-        android:id="@+id/hotelcontact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_type1"
-        android:onClick="contactHandler"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="@string/contactBtn" />
+            <TextView
+                android:id="@+id/tvbreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/ivbreakfast"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/ivbreakfast"
+                app:layout_constraintTop_toTopOf="@+id/ivbreakfast"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ivlunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.204"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivbreakfast"
+                app:layout_constraintVertical_bias="0.132"
+                app:srcCompat="@drawable/ic_round_restaurant_menu_24" />
+
+            <TextView
+                android:id="@+id/tvlunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/ivlunch"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/ivlunch"
+                app:layout_constraintTop_toTopOf="@+id/ivlunch"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ivdinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.204"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivlunch"
+                app:layout_constraintVertical_bias="0.227"
+                app:srcCompat="@drawable/ic_baseline_room_service_24" />
+
+            <TextView
+                android:id="@+id/tvdinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/ivdinner"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/ivdinner"
+                app:layout_constraintTop_toTopOf="@+id/ivdinner"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivsingleb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.197"
+                app:layout_constraintStart_toEndOf="@+id/divider2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.168"
+                app:srcCompat="@drawable/ic_baseline_hotel_24" />
+
+            <TextView
+                android:id="@+id/tvsingleb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/ivsingleb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.277"
+                app:layout_constraintStart_toEndOf="@+id/ivsingleb"
+                app:layout_constraintTop_toTopOf="@+id/ivsingleb"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ivdoubleb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.197"
+                app:layout_constraintStart_toEndOf="@+id/divider2"
+                app:layout_constraintTop_toBottomOf="@+id/ivsingleb"
+                app:layout_constraintVertical_bias="0.218"
+                app:srcCompat="@drawable/ic_baseline_king_bed_24" />
+
+            <TextView
+                android:id="@+id/tvdoubleb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/ivdoubleb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.277"
+                app:layout_constraintStart_toEndOf="@+id/ivdoubleb"
+                app:layout_constraintTop_toTopOf="@+id/ivdoubleb"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/hotelcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type1"
+            android:onClick="contactHandler"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/contactBtn" />
 
 
-</LinearLayout>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

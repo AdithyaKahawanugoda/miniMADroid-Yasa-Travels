@@ -21,11 +21,11 @@ import com.squareup.picasso.Picasso;
 public class HotelDetailsActivity extends AppCompatActivity {
 
     private DatabaseReference dbRef;
-    private TextView name,description;
+    private TextView name,description,breakfast,lunch,dinner,singleb,doubleb;
     private Button contactbtn;
     private ImageView img;
 
-    String Name,Description,ContactNo,ImgUrl;
+    String Name,Description,ContactNo,ImgUrl,Breakfast,Lunch,Dinner,Singlebed,Doublebed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,12 @@ public class HotelDetailsActivity extends AppCompatActivity {
         contactbtn = (Button) findViewById(R.id.hotelcontact);
         img = (ImageView) findViewById(R.id.ivHotelImg);
 
+        breakfast = (TextView) findViewById(R.id.tvbreakfast);
+        lunch = (TextView) findViewById(R.id.tvlunch);
+        dinner = (TextView) findViewById(R.id.tvdinner);
+        singleb = (TextView) findViewById(R.id.tvsingleb);
+        doubleb = (TextView) findViewById(R.id.tvdoubleb);
+
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -49,9 +55,23 @@ public class HotelDetailsActivity extends AppCompatActivity {
                 ContactNo = snapshot.child("contactNo").getValue().toString();
                 ImgUrl = snapshot.child("image").getValue().toString();
 
+                Breakfast = snapshot.child("breakfast").getValue().toString();
+                Lunch = snapshot.child("lunch").getValue().toString();
+                Dinner = snapshot.child("dinner").getValue().toString();
+                Singlebed = snapshot.child("singleBed").getValue().toString();
+                Doublebed = snapshot.child("doubleBed").getValue().toString();
+
                 name.setText(Name);
                 description.setText(Description);
                 Picasso.get().load(ImgUrl).into(img);
+
+                breakfast.setText(Breakfast);
+                lunch.setText(Lunch);
+                dinner.setText(Dinner);
+                singleb.setText(Singlebed);
+                doubleb.setText(Doublebed);
+
+                
             }
 
             @Override
