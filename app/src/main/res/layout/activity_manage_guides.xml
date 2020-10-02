@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back1"
     android:orientation="vertical"
-    tools:context=".ManageGuidesActivity"
-    android:padding="20dp">
+    android:padding="20dp"
+    tools:context=".ManageGuidesActivity">
 
 
     <TextView
@@ -15,19 +16,21 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/manageG"
+        android:textColor="#100000"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/AddGuideBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/addnew"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:background="#83C5BB"
+        android:text="@string/addnew" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/GuideList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
