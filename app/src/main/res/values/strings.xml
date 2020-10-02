@@ -21,6 +21,7 @@
     <string name="searchResultsGTopic">Search results for Guides in ~  </string>
     <string name="searchResultsRTopic">Search results for Rides in "District_Name" </string>
     <string name="contactBtn">Contact Us</string>
+    <string name="avgCosts">Average Price range</string>
     <string name="submit">Submit</string>
     <!--    User Signup-->
     <!--    <string name="app_name">Yasa Travels</string>-->

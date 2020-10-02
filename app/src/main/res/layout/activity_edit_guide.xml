@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditGuideActivity"
+    android:background="@drawable/back1"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".EditGuideActivity">
 
 
     <TextView
@@ -16,40 +17,44 @@
         android:layout_margin="10dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/regGuide"
+        android:textColor="#100101"
         android:textSize="24sp" />
 
 
     <TextView
         android:id="@+id/tvUploadImg"
-        android:layout_width="371dp"
+        android:layout_width="410dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:gravity="center"
         android:paddingTop="10dp"
         android:text="@string/mgChangeImg"
         android:textAlignment="center"
+        android:textColor="#090000"
         android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/EditGuideImg"
-        android:layout_width="331dp"
-        android:layout_height="102dp"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         app:srcCompat="@drawable/btn_type_delete" />
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="match_parent"
+        android:layout_width="367dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgName"
+        android:textColor="#170101"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/EditGuideName"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_width="386dp"
+        android:layout_height="44dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -61,17 +66,18 @@
 
     <TextView
         android:id="@+id/tvemail"
-        android:layout_width="match_parent"
+        android:layout_width="377dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/email"
+        android:textColor="#070000"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/EditGuideMail"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_width="389dp"
+        android:layout_height="43dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -81,39 +87,40 @@
         android:paddingLeft="5dp"
         android:paddingRight="5dp" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvDistrict"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:paddingStart="30dp"-->
-<!--        android:text="@string/mgDistrict"-->
-<!--        android:textSize="18sp" />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvDistrict"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:paddingStart="30dp"-->
+    <!--        android:text="@string/mgDistrict"-->
+    <!--        android:textSize="18sp" />-->
 
-<!--    <Spinner-->
-<!--        android:id="@+id/EditGuideSpinner"-->
-<!--        android:layout_width="395dp"-->
-<!--        android:layout_height="35dp"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginTop="5dp"-->
-<!--        android:layout_marginBottom="10dp"-->
-<!--        android:background="@drawable/dropdown_spinner_custom"-->
-<!--        android:paddingLeft="5dp"-->
-<!--        android:paddingRight="5dp" />-->
+    <!--    <Spinner-->
+    <!--        android:id="@+id/EditGuideSpinner"-->
+    <!--        android:layout_width="395dp"-->
+    <!--        android:layout_height="35dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:background="@drawable/dropdown_spinner_custom"-->
+    <!--        android:paddingLeft="5dp"-->
+    <!--        android:paddingRight="5dp" />-->
 
     <TextView
         android:id="@+id/tvDescription"
-        android:layout_width="match_parent"
+        android:layout_width="386dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgDescription"
+        android:textColor="#130101"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/EditGuideDescription"
-        android:layout_width="392dp"
-        android:layout_height="69dp"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -125,17 +132,18 @@
 
     <TextView
         android:id="@+id/tvContact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="383dp"
+        android:layout_height="41dp"
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgContact"
+        android:textColor="#130000"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/EditGuideContact"
-        android:layout_width="387dp"
-        android:layout_height="41dp"
+        android:layout_width="383dp"
+        android:layout_height="39dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
@@ -146,33 +154,35 @@
         android:paddingRight="5dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="390dp"
-        android:layout_height="wrap_content">
+        android:layout_width="449dp"
+        android:layout_height="61dp">
 
         <Button
             android:id="@+id/updateGbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="83dp"
+            android:layout_height="41dp"
             android:layout_gravity="center"
+            android:background="@drawable/btn_type1"
             android:text="@string/mgUpdateBtn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintHorizontal_bias="0.295"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/deleteGbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="104dp"
+            android:layout_width="83dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="148dp"
+            android:background="@drawable/btn_type1"
             android:text="@string/mgDeleteBtn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.345"
             app:layout_constraintStart_toEndOf="@+id/updateHbtn"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
