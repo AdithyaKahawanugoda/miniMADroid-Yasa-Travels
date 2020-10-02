@@ -16,13 +16,15 @@
         <activity android:name=".AddLocationActivity"
             android:parentActivityName=".ManageLocationsActivity">
 
+
                 <intent-filter>
                         <action android:name="android.intent.action.MAIN" />
 
                         <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
 
-<!--                <intent-filter>-->
+
+                <!--                <intent-filter>-->
 <!--                        <action android:name="android.intent.action.MAIN" />-->
 <!---->
 <!--                        <category android:name="android.intent.category.LAUNCHER" />-->
@@ -80,12 +82,6 @@
 <!--        ////////////////////////////////////////////////////////-->
         <activity android:name=".ManageLocationsActivity"
             android:parentActivityName=".AdminProfileActivity">
-
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
 
 
 
@@ -148,6 +144,7 @@
             android:parentActivityName=".LoginActivity"/>
         <activity android:name=".SearchActivity"
             android:parentActivityName=".UserHomeActivity">
+
 
 
 
