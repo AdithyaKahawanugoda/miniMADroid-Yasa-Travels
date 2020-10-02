@@ -42,11 +42,7 @@
 
         </activity>
             <activity android:name=".CurrancyConvertorActivity">
-                    <intent-filter>
-                            <action android:name="android.intent.action.MAIN" />
 
-                            <category android:name="android.intent.category.LAUNCHER" />
-                    </intent-filter>
 
             </activity>
         <activity android:name=".EditGuideActivity"
@@ -79,6 +75,7 @@
 <!--        ////////////////////////////////////////////////////////-->
         <activity android:name=".ManageLocationsActivity"
             android:parentActivityName=".AdminProfileActivity">
+
 
 
 
@@ -144,6 +141,12 @@
             android:parentActivityName=".UserHomeActivity">
 
 
+
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
 
 
         </activity>

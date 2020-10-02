@@ -19,6 +19,7 @@
             android:id="@+id/msg1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#E8E2AC"
             android:text="@string/dashboard"
             android:textColor="#0C0000"
             android:textSize="24sp"
@@ -67,6 +68,7 @@
                 android:id="@+id/imageView5"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#DFDED2"
                 android:scaleType="fitXY"
                 tools:srcCompat="@drawable/ride_icon" />
 
@@ -93,6 +95,7 @@
                 android:id="@+id/imageView6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#DFDED2"
                 app:srcCompat="@drawable/hotel_icon" />
 
             <TextView
@@ -118,6 +121,7 @@
                 android:id="@+id/imageView7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#F4EDED"
                 app:srcCompat="@drawable/guide_icon" />
 
             <TextView
@@ -143,6 +147,7 @@
                 android:id="@+id/imageView8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#DFDED2"
                 app:srcCompat="@drawable/location_icon" />
 
             <TextView
@@ -168,6 +173,7 @@
                 android:id="@+id/imageView9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#DFDED2"
                 app:srcCompat="@drawable/user_icon" />
 
             <TextView
@@ -199,6 +205,7 @@
                 android:id="@+id/logoutBtn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:background="#DCD8B9"
                 android:onClick="logout"
                 android:text="LOGOUT" />
 
