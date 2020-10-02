@@ -29,7 +29,7 @@ public class EditLocationActivity extends AppCompatActivity {
 
     public static final String EXTRA_TEXTID = "locationID";
     ImageView viewImage;
-    EditText name, description, address;
+    EditText name, description, address, txtTPriceAdult, txtTPriceChild;
     Spinner district;
     Button updateBtn, removeBtn;
     String id, imageUrl;
@@ -51,6 +51,9 @@ public class EditLocationActivity extends AppCompatActivity {
         district = (Spinner) findViewById(R.id.spinnerHADistrict);
         description = (EditText) findViewById(R.id.tfAHdescription);
         address = (EditText) findViewById(R.id.tfAHcontact);
+        txtTPriceAdult = (EditText) findViewById(R.id.tfTPriceAdultEdit);
+        txtTPriceChild = (EditText) findViewById(R.id.tfTPriceChildEdit);
+
 
         id = getIntent().getStringExtra(EXTRA_TEXTID);
 
@@ -66,6 +69,8 @@ public class EditLocationActivity extends AppCompatActivity {
                     name.setText(snapshot.child("name").getValue().toString());
                     description.setText(snapshot.child("description").getValue().toString());
                     address.setText(snapshot.child("address").getValue().toString());
+                    txtTPriceAdult.setText(snapshot.child("ticketPriceAdult").getValue().toString());
+                    txtTPriceChild.setText(snapshot.child("ticketPriceChild").getValue().toString());
                     //set spinner--------------------------------------------------------------------------------------------
 //                    district.------->snapshot.child("district").getValue().toString()
                     imageUrl = snapshot.child("image").getValue().toString();
@@ -110,7 +115,7 @@ public class EditLocationActivity extends AppCompatActivity {
                             startActivity(intent);
                             finish();
 
-                         }
+                        }
                         else
                         {
                             Toast.makeText(getApplicationContext(), "No source to Delete", Toast.LENGTH_SHORT).show();
@@ -133,6 +138,8 @@ public class EditLocationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                final String ticketPriceAdults = txtTPriceAdult.getText().toString();
+                final String ticketPriceChild = txtTPriceChild.getText().toString();
                 updateRef = FirebaseDatabase.getInstance().getReference().child("Location").child(id);
                 updateRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -141,6 +148,8 @@ public class EditLocationActivity extends AppCompatActivity {
                         updateRef.child("name").setValue(name.getText().toString());
                         updateRef.child("description").setValue(description.getText().toString());
                         updateRef.child("address").setValue(address.getText().toString());
+                        updateRef.child("ticketPriceAdult").setValue(ticketPriceAdults);
+                        updateRef.child("ticketPriceChild").setValue(ticketPriceChild);
 //                            updateRef.child("district").setValue(district);
 //                            updateRef.child("image").setValue(url);
 

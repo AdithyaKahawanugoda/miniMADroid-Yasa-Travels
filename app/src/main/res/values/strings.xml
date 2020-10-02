@@ -142,4 +142,10 @@
     <string name="dinner">Dinner plate</string>
     <string name="singlebed">Single-Bed Rooms</string>
     <string name="doublebed">Double-Bed Rooms</string>
+
+    <string name="mgTPriceAdult">Ticket Price Adult</string>
+    <string name="mgTPriceChild">Ticket Price Child</string>
+    <string name="mgNofAdults">Number of Adults</string>
+    <string name="mgNofChild">Number of Children</string>
+    <string name="CalculateTPrice">Calculate Ticket Price</string>
 </resources>
