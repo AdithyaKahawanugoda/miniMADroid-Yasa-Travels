@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".LocationDetailsActivity"
-android:padding="10dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".LocationDetailsActivity">
 
     <TextView
         android:id="@+id/tvLocationName"
@@ -19,22 +20,21 @@ android:padding="10dp">
         android:textColor="#000000"
         android:textSize="30sp" />
 
-<RatingBar
-    android:id="@+id/ratingBar2"
-    style="@style/Widget.AppCompat.RatingBar.Small"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal" />
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
 
-<ImageView
-    android:id="@+id/ivLocationImage"
-    android:layout_width="300dp"
-    android:layout_height="200dp"
-    android:transitionName="transition1"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginBottom="30dp"
-    android:layout_marginTop="20dp"
-    />
+    <ImageView
+        android:id="@+id/ivLocationImage"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:transitionName="transition1" />
 
     <TextView
         android:id="@+id/tvLocationDescription"
@@ -46,18 +46,17 @@ android:padding="10dp">
         android:textStyle="italic" />
 
     <RatingBar
-    android:id="@+id/LocationRateInput"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:fadingEdge="horizontal|vertical" />
+        android:id="@+id/LocationRateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal|vertical" />
 
     <Button
         android:id="@+id/LRateSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_type1"
+        android:backgroundTint="#89E8C2"
         android:text="@string/submit" />
-
 
 
 </LinearLayout>
