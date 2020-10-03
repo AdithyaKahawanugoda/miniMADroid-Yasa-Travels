@@ -17,9 +17,9 @@
     <string name="exploreDescription">Endless beaches, timeless ruins, welcoming people, oodles of elephants, rolling surf, cheap prices, fun trains, famous tea and flavourful food make Sri Lanka irresistible.</string>
     <!--    Search Results-->
     <string name="searchResultsHTopic">Search results for Hotels in ~ </string>
-    <string name="searchResultsLTopic">Search results for Locations in "District_Name" </string>
+    <string name="searchResultsLTopic">Search results for Locations in ~ </string>
     <string name="searchResultsGTopic">Search results for Guides in ~  </string>
-    <string name="searchResultsRTopic">Search results for Rides in "District_Name" </string>
+    <string name="searchResultsRTopic">Search results for Rides in ~ </string>
     <string name="contactBtn">Contact Us</string>
     <string name="avgCosts">Average Price range</string>
     <string name="submit">Submit</string>
