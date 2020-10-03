@@ -104,7 +104,7 @@ public class LocationDetailsActivity extends AppCompatActivity{
 
     }
 
-    private int CalculatePrice(int AdultTicketPrice,int ChildTicketPrice,int NoOfAdults,int NoOfChildren){
+    int CalculatePrice(int AdultTicketPrice, int ChildTicketPrice, int NoOfAdults, int NoOfChildren){
         return ((AdultTicketPrice*NoOfAdults) + (ChildTicketPrice*NoOfChildren));
     }
 
