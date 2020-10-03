@@ -23,8 +23,9 @@
     <string name="contactBtn">Contact Us</string>
     <string name="avgCosts">Average Price range</string>
     <string name="submit">Submit</string>
+    <string name="checkPrice">Estimate your next vacation </string>
+    <string name="lodging">Lodging</string>
     <!--    User Signup-->
-    <!--    <string name="app_name">Yasa Travels</string>-->
     <string name="page_title">Sign Up here !!!</string>
     <string name="profile_picture">Profile picture :</string>
     <string name="name">Name :</string>
@@ -137,9 +138,9 @@
     <string name="addG">Add New Guide</string>
     <!--    Hotel extras-->
     <string name="Costs">Average Costs</string>
-    <string name="breakfast">Breakfast plate</string>
-    <string name="lunch">Lunch plate</string>
-    <string name="dinner">Dinner plate</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
     <string name="singlebed">Single-Bed Rooms</string>
     <string name="doublebed">Double-Bed Rooms</string>
 </resources>

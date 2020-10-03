@@ -6,8 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,10 +25,14 @@ import com.squareup.picasso.Picasso;
 public class HotelDetailsActivity extends AppCompatActivity {
 
     private DatabaseReference dbRef;
-    private TextView name,description,breakfast,lunch,dinner,singleb,doubleb;
+    private TextView name,description,breakfast,lunch,dinner,singleb,doubleb,amount;
     private Button contactbtn;
     private ImageView img;
+    private CheckBox chB,chL,chD,chLodgin;
+    private EditText headCount;
+    private ImageButton btnSum;
 
+    int callodgin,calbreakfast,callunch,caldinner;
     String Name,Description,ContactNo,ImgUrl,Breakfast,Lunch,Dinner,Singlebed,Doublebed;
 
     @Override
@@ -47,6 +55,14 @@ public class HotelDetailsActivity extends AppCompatActivity {
         singleb = (TextView) findViewById(R.id.tvsingleb);
         doubleb = (TextView) findViewById(R.id.tvdoubleb);
 
+        chB = (CheckBox) findViewById(R.id.chbreakfast);
+        chL = (CheckBox) findViewById(R.id.chlunch);
+        chD = (CheckBox) findViewById(R.id.chdinner);
+        chLodgin = (CheckBox) findViewById(R.id.chlodgin);
+        headCount = (EditText) findViewById(R.id.headcount);
+        btnSum = (ImageButton) findViewById(R.id.btnsum);
+        amount = (TextView) findViewById(R.id.tvSum);
+
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -65,13 +81,19 @@ public class HotelDetailsActivity extends AppCompatActivity {
                 description.setText(Description);
                 Picasso.get().load(ImgUrl).into(img);
 
-                breakfast.setText(Breakfast);
-                lunch.setText(Lunch);
-                dinner.setText(Dinner);
-                singleb.setText(Singlebed);
-                doubleb.setText(Doublebed);
+                breakfast.setText("LKR "+Breakfast);
+                lunch.setText("LKR "+Lunch);
+                dinner.setText("LKR "+Dinner);
+                singleb.setText("LKR "+Singlebed);
+                doubleb.setText("LKR "+Doublebed);
 
-                
+                btnSum.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        calculateSum();
+                    }
+                });
+
             }
 
             @Override
@@ -91,4 +113,32 @@ public class HotelDetailsActivity extends AppCompatActivity {
     }
 
     public void contactHandler(View view){}
+
+    public void calculateSum(){
+
+        int singleRooms;
+        int doubleRooms;
+        int heads = Integer.parseInt(headCount.getText().toString());
+        if(chLodgin.isChecked()){
+            doubleRooms = heads/2;
+            singleRooms = heads%2;
+            callodgin = doubleRooms * Integer.parseInt(Doublebed) + singleRooms * Integer.parseInt(Singlebed);
+            Log.i("checkCosts", String.valueOf(callodgin)+" :lodgin");
+        }
+        if(chB.isChecked()){
+            calbreakfast = Integer.parseInt(Breakfast) * heads;
+            Log.i("checkCosts", String.valueOf(calbreakfast)+" :breakfast");
+        }
+        if(chL.isChecked()){
+            callunch = Integer.parseInt(Lunch) * heads;
+            Log.i("checkCosts", String.valueOf(callunch)+" :lunch");
+        }
+        if(chD.isChecked()){
+            caldinner = Integer.parseInt(Dinner) * heads;
+            Log.i("checkCosts", String.valueOf(caldinner)+" :dinner");
+        }
+        float estimationVal = callodgin+calbreakfast+callunch+caldinner;
+        amount.setText("LKR "+ estimationVal);
+
+    }
 }

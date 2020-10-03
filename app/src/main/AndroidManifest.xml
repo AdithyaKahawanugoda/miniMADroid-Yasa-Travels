@@ -16,20 +16,7 @@
         <activity android:name=".AddLocationActivity"
             android:parentActivityName=".ManageLocationsActivity">
 
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
 
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-
-
-
-
-<!--                <intent-filter>-->
-<!--                        <action android:name="android.intent.action.MAIN" />-->
-<!---->
-<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                </intent-filter>-->
 
         </activity>
 
@@ -77,8 +64,6 @@
             android:parentActivityName=".AdminProfileActivity">
 
 
-
-
         </activity>
 
 <!--     ///////////////////////////////////////////////////////////-->
@@ -102,22 +87,9 @@
         <activity android:name=".RideDetailsActivity"
             android:parentActivityName=".ResultsRidesActivity"/>
         <activity android:name=".LocationDetailsActivity"
-            android:parentActivityName=".ResultsLocationsActivity">
-
-
-
-
-<!--                <intent-filter>-->
-<!--                        <action android:name="android.intent.action.MAIN" />-->
-
-<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                </intent-filter>-->
-        </activity>
+            android:parentActivityName=".ResultsLocationsActivity"/>
         <activity android:name=".GuideDetailsActivity"
-            android:parentActivityName=".ResultsGuidesActivity">
-
-
-        </activity>
+            android:parentActivityName=".ResultsGuidesActivity"/>
         <activity android:name=".HotelDetailsActivity"
             android:parentActivityName=".ResultsHotelsActivity"/>
         <activity android:name=".ResultsGuidesActivity"
@@ -128,8 +100,6 @@
 <!--        ////////////////////////////-->
         <activity android:name=".ResultsLocationsActivity"
             android:parentActivityName=".SearchActivity">
-
-
 
         </activity>
 
@@ -143,13 +113,10 @@
             android:parentActivityName=".LoginActivity"/>
         <activity android:name=".SearchActivity"
             android:parentActivityName=".UserHomeActivity">
-<!--                <intent-filter>-->
-<!--                        <action android:name="android.intent.action.MAIN" />-->
-<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                </intent-filter>-->
-
-
-
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
