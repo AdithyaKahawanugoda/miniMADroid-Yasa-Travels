@@ -19,8 +19,8 @@
 
         <TextView
             android:id="@+id/srLocationsTopic"
-            android:layout_width="310dp"
-            android:layout_height="121dp"
+            android:layout_width="wrap_content"
+            android:layout_height="117dp"
             android:fontFamily="sans-serif-condensed-light"
             android:paddingStart="30dp"
             android:paddingTop="20dp"
@@ -32,8 +32,8 @@
 
         <TextView
             android:id="@+id/inputdist"
-            android:layout_width="135dp"
-            android:layout_height="79dp"
+            android:layout_width="93dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:fontFamily="sans-serif-smallcaps"
             android:text="TextView"

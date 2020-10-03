@@ -13,6 +13,7 @@ public class AdminProfileActivity extends AppCompatActivity {
 
 
     TextView ManageGuidesBtn;
+    TextView ManageLocationBtn;
 
 
     @Override
@@ -21,11 +22,19 @@ public class AdminProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_admin_profile);
 
         ManageGuidesBtn = findViewById(R.id.textView16);
+        ManageLocationBtn = findViewById(R.id.textView17);
 
         ManageGuidesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),ManageGuidesActivity.class));
+            }
+        });
+
+        ManageLocationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ManageLocationsActivity.class));
             }
         });
 
