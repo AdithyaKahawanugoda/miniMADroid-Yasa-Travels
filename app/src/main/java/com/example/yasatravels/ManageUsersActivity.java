@@ -1,10 +1,12 @@
 package com.example.yasatravels;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -55,6 +57,26 @@ public class ManageUsersActivity extends AppCompatActivity {
                         String dataId = getRef(i).getKey();
                         Log.i("mgusers", "Touched ID:" + dataId);
                         // user delete code
+                        AlertDialog.Builder builder = new AlertDialog.Builder(ManageUsersActivity.this);
+                        builder.setTitle("Are you sure?");
+                        builder.setMessage("Deleting this entry cannot rollback after confirmation");
+                        builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dbRef.removeValue();
+                                dialog.dismiss();
+                            }
+
+                        });
+                        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+
+                        AlertDialog dialog = builder.create();
+                        dialog.show();
                     }
                 });
             }
