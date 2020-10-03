@@ -125,10 +125,6 @@
 
         </activity>
 
-<!--        -->
-            <activity android:name=".AdminLoginActivity">
-
-            </activity>
         <activity android:name=".ResultsHotelsActivity"
             android:parentActivityName=".SearchActivity">
 
