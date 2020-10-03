@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/back13"
     android:onClick="logout"
     android:orientation="vertical"
     android:padding="10dp"
@@ -19,8 +19,9 @@
             android:id="@+id/msg1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#E8E2AC"
             android:text="@string/dashboard"
-            android:textColor="#131313"
+            android:textColor="#0C0000"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,38 +43,6 @@
             app:layout_constraintVertical_bias="0.428" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_margin="10dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        android:text="name"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        android:text="email"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        android:text="@string/admin"
-        android:textSize="18sp" />
-
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
@@ -88,8 +57,8 @@
         android:paddingTop="20dp">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="340dp"
+            android:layout_height="120dp"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:orientation="vertical"
@@ -99,16 +68,18 @@
                 android:id="@+id/imageView5"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#DFDED2"
                 android:scaleType="fitXY"
                 tools:srcCompat="@drawable/ride_icon" />
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="139dp"
+                android:layout_height="92dp"
                 android:layout_marginLeft="5dp"
                 android:paddingTop="10dp"
                 android:text="@string/aRides"
+                android:textColor="#090000"
                 android:textSize="18sp" />
         </TableRow>
 
@@ -124,15 +95,17 @@
                 android:id="@+id/imageView6"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#DFDED2"
                 app:srcCompat="@drawable/hotel_icon" />
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="146dp"
+                android:layout_height="92dp"
                 android:layout_marginLeft="5dp"
                 android:paddingTop="10dp"
                 android:text="@string/aHotels"
+                android:textColor="#0E0101"
                 android:textSize="18sp" />
         </TableRow>
 
@@ -148,15 +121,17 @@
                 android:id="@+id/imageView7"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#F4EDED"
                 app:srcCompat="@drawable/guide_icon" />
 
             <TextView
                 android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="139dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:paddingTop="10dp"
                 android:text="@string/aGuides"
+                android:textColor="#120000"
                 android:textSize="18sp" />
         </TableRow>
 
@@ -172,15 +147,17 @@
                 android:id="@+id/imageView8"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#DFDED2"
                 app:srcCompat="@drawable/location_icon" />
 
             <TextView
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="93dp"
                 android:layout_marginLeft="5dp"
                 android:paddingTop="10dp"
                 android:text="@string/aLocations"
+                android:textColor="#100101"
                 android:textSize="18sp" />
         </TableRow>
 
@@ -196,15 +173,17 @@
                 android:id="@+id/imageView9"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:background="#DFDED2"
                 app:srcCompat="@drawable/user_icon" />
 
             <TextView
                 android:id="@+id/textView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="136dp"
+                android:layout_height="79dp"
                 android:layout_marginLeft="5dp"
                 android:paddingTop="10dp"
                 android:text="@string/aUsers"
+                android:textColor="#120000"
                 android:textSize="18sp" />
         </TableRow>
 
@@ -224,8 +203,9 @@
 
             <Button
                 android:id="@+id/logoutBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="54dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#DCD8B9"
                 android:onClick="logout"
                 android:text="LOGOUT" />
 

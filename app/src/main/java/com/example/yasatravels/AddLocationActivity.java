@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -24,16 +23,13 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
 public class AddLocationActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener  {
 
 
     private static final int GALLERY_REQUEST = 1;
 
     private ImageView img;
-    private EditText txtname, txtaddress, txtdescription;
+    private EditText txtname, txtaddress, txtdescription, txtTPriceAdult, txtTPriceChild;
     private Button btnsave;
     private Uri imageUri = null;
     private Spinner spinner;
@@ -54,6 +50,8 @@ public class AddLocationActivity extends AppCompatActivity implements AdapterVie
         txtname = (EditText) findViewById(R.id.tfAHname);
         txtaddress = (EditText) findViewById(R.id.tfAHcontact);
         txtdescription = (EditText) findViewById(R.id.tfAHdescription);
+        txtTPriceAdult = (EditText) findViewById(R.id.tfTPriceAdult);
+        txtTPriceChild = (EditText) findViewById(R.id.tfTpriceChild);
         img = (ImageView) findViewById(R.id.imgUploadAH);
         spinner = (Spinner) findViewById(R.id.spinnerHADistrict);
 
@@ -115,6 +113,8 @@ public class AddLocationActivity extends AppCompatActivity implements AdapterVie
         final String name = txtname.getText().toString().trim();
         final String description = txtdescription.getText().toString().trim();
         final String address = txtaddress.getText().toString().trim();
+        final String ticketPriceAdults = txtTPriceAdult.getText().toString();
+        final String ticketPriceChild = txtTPriceChild.getText().toString();
         final String district = item;
 
 
@@ -138,6 +138,8 @@ public class AddLocationActivity extends AppCompatActivity implements AdapterVie
                                     newLocation.child("description").setValue(description);
                                     newLocation.child("address").setValue(address);
                                     newLocation.child("district").setValue(district);
+                                    newLocation.child("ticketPriceAdult").setValue(ticketPriceAdults);
+                                    newLocation.child("ticketPriceChild").setValue(ticketPriceChild);
                                     newLocation.child("image").setValue(url);
                                 }
                             });

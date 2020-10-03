@@ -5,6 +5,7 @@
     android:id="@+id/sr-scrollv"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back4"
     android:orientation="vertical"
     android:paddingLeft="10dp"
     android:paddingTop="10dp"
@@ -25,6 +26,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="40dp"
             android:text="@string/searchResultsGTopic"
+            android:textColor="#0B0000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -35,6 +37,7 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-smallcaps"
             android:text="TextView"
+            android:textColor="#070000"
             android:textSize="18sp"
             android:textStyle="bold" />
 

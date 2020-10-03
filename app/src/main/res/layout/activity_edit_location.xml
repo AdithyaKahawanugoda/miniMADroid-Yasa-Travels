@@ -1,139 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
-    android:orientation="vertical"
-    tools:context=".EditLocationActivity">
-
-
-    <TextView
-        android:id="@+id/tvUploadImg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="Edit Location"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        android:layout_height="match_parent"
+        android:background="@drawable/back1"
+        android:orientation="vertical"
+        tools:context=".EditLocationActivity">
 
-    <ImageView
-        android:id="@+id/imgUploadAH"
-        android:layout_width="334dp"
-        android:layout_height="135dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        app:srcCompat="@drawable/btn_type_delete" />
 
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingStart="30dp"
-        android:text="@string/mgName"
-        android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tvUploadImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            android:paddingTop="10dp"
+            android:text="Edit Location"
+            android:textAlignment="center"
+            android:textColor="#070000"
+            android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/tfAHname"
-        android:layout_width="400dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_type_delete"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp" />
+        <ImageView
+            android:id="@+id/imgUploadAH"
+            android:layout_width="334dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/btn_type_delete" />
 
-    <!--    <Spinner-->
-    <!--        android:id="@+id/spinnerHADistrict"-->
-    <!--        android:layout_width="400dp"-->
-    <!--        android:layout_height="45dp"-->
-    <!--        android:layout_gravity="center"-->
-    <!--        android:layout_marginTop="5dp"-->
-    <!--        android:layout_marginBottom="10dp"-->
-    <!--        android:background="@drawable/dropdown_spinner_custom"-->
-    <!--        android:paddingLeft="5dp"-->
-    <!--        android:paddingRight="5dp" />-->
-
-    <TextView
-        android:id="@+id/tvDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingStart="30dp"
-        android:text="@string/mgDescription"
-        android:textSize="24sp" />
-
-    <EditText
-        android:id="@+id/tfAHdescription"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_type_delete"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp" />
-
-    <TextView
-        android:id="@+id/tvContact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingStart="30dp"
-        android:text="@string/mgAddress"
-        android:textSize="24sp" />
-
-    <EditText
-        android:id="@+id/tfAHcontact"
-        android:layout_width="400dp"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_type_delete"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/updateHbtn"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/btn_type1"
-            android:text="@string/mgUpdateBtn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.263"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.171" />
+            android:paddingStart="30dp"
+            android:text="@string/mgName"
+            android:textColor="#070000"
+            android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/deleteHbtn"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/tfAHname"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type_delete"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <!--    <Spinner-->
+        <!--        android:id="@+id/spinnerHADistrict"-->
+        <!--        android:layout_width="400dp"-->
+        <!--        android:layout_height="45dp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_marginTop="5dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:background="@drawable/dropdown_spinner_custom"-->
+        <!--        android:paddingLeft="5dp"-->
+        <!--        android:paddingRight="5dp" />-->
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_type1"
-            android:text="@string/mgDeleteBtn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.305"
-            app:layout_constraintStart_toEndOf="@+id/updateHbtn"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.171" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_gravity="center"
+            android:paddingStart="30dp"
+            android:text="@string/mgDescription"
+            android:textColor="#070000"
+            android:textSize="24sp" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/tfAHdescription"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type_delete"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="30dp"
+            android:text="@string/mgAddress"
+            android:textColor="#070000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/tfAHcontact"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type_delete"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/TicketPriceAdult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="30dp"
+            android:text="@string/mgTPriceAdult"
+            android:textColor="#070000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/tfTPriceAdultEdit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type_delete"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/TicketPriceChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="30dp"
+            android:text="@string/mgTPriceChild"
+            android:textColor="#070000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/tfTPriceChildEdit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type_delete"
+            android:ems="10"
+            android:inputType="number" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/updateHbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_type1"
+                android:text="@string/mgUpdateBtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.263"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.171" />
+
+            <Button
+                android:id="@+id/deleteHbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_type1"
+                android:text="@string/mgDeleteBtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.305"
+                app:layout_constraintStart_toEndOf="@+id/updateHbtn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.171" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

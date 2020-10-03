@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back7"
     tools:context=".AdminLoginActivity">
 
 
@@ -78,12 +79,12 @@
 
     <Button
         android:id="@+id/adminLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#BFF0F6"
+        android:layout_width="92dp"
+        android:layout_height="58dp"
+        android:background="@drawable/btn_type1"
         android:text="LOGIN"
-        android:textColor="#03A9F4"
-        android:textStyle="bold"
+        android:textColor="#00090C"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -96,7 +97,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Log In as Admin.."
+        android:fontFamily="casual"
+        android:text="Log In as Admin...."
         android:textColor="#3F51B5"
         android:textSize="18sp"
         android:textStyle="bold"

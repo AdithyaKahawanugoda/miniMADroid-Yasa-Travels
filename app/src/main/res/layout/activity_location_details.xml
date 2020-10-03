@@ -1,63 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".LocationDetailsActivity"
-android:padding="10dp">
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4">
 
-    <TextView
-        android:id="@+id/tvLocationName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="location name"
-        android:textColor="#000000"
-        android:textSize="30sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".LocationDetailsActivity">
 
-<RatingBar
-    android:id="@+id/ratingBar2"
-    style="@style/Widget.AppCompat.RatingBar.Small"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/tvLocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="location name"
+            android:textColor="#070000"
+            android:textSize="30sp" />
 
-<ImageView
-    android:id="@+id/ivLocationImage"
-    android:layout_width="300dp"
-    android:layout_height="200dp"
-    android:transitionName="transition1"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginBottom="30dp"
-    android:layout_marginTop="20dp"
-    />
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:id="@+id/tvLocationDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="location description"
-        android:textAlignment="viewStart"
-        android:textColor="#000000"
-        android:textStyle="italic" />
+        <ImageView
+            android:id="@+id/ivLocationImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:transitionName="transition1" />
 
-    <RatingBar
-    android:id="@+id/LocationRateInput"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:fadingEdge="horizontal|vertical" />
+        <TextView
+            android:id="@+id/tvLocationDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="location description"
+            android:textAlignment="viewStart"
+            android:textColor="#070000"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/LRateSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_type1"
-        android:text="@string/submit" />
+        <RatingBar
+            android:id="@+id/LocationRateInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal|vertical" />
 
+        <Button
+            android:id="@+id/LRateSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_type1"
+            android:text="@string/submit" />
 
+        <TextView
+            android:id="@+id/NumberOfAdults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/mgNofAdults"
+            android:textColor="#070000"
+            android:textSize="20sp" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/tfNumberOfAdults"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type_delete"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/NumberOfChildren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/mgNofChild"
+            android:textColor="#070000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tfNumberOfChildren"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type_delete"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/BtnCalculateTPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_type1"
+            android:padding="10dp"
+            android:text="@string/CalculateTPrice" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

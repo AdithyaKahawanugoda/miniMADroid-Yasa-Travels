@@ -48,7 +48,7 @@
     <string name="home_logout">Log Out</string>
     <string name="home_homeIcon">Home</string>
     <string name="home_profleIcon">Profile</string>
-    <string name="home_contactUs">Contact Us</string>
+    <string name="home_convertor">Currency Converter</string>
     <string name="home_aboutUs">About Us</string>
     <string name="homeDescription">Set in the Indian Ocean in South Asia, the tropical island nation of Sri Lanka has a history dating back to the birth of time.  It is a place where the original soul of Buddhism still flourishes and where nature’s beauty remains abundant and unspoilt.Few places in the world can offer the traveller such a remarkable combination of stunning landscapes, pristine beaches, captivating cultural heritage and unique experiences within such a compact location.</string>
     <!--    User Profile-->
@@ -59,7 +59,7 @@
 
     <string name="user_profileUpdate">Update Profile</string>
     <string name="user_profileDelete">Delete Profile</string>
-    <string name="user_waterMark">Happy Travelling Josh !</string>
+    <string name="user_waterMark">Happy Travelling !</string>
 
     <!--update profile strings-->
     <string name="user_saveProfileUpdates">Save Updates</string>
@@ -143,4 +143,10 @@
     <string name="dinner">Dinner</string>
     <string name="singlebed">Single-Bed Rooms</string>
     <string name="doublebed">Double-Bed Rooms</string>
+
+    <string name="mgTPriceAdult">Ticket Price Adult</string>
+    <string name="mgTPriceChild">Ticket Price Child</string>
+    <string name="mgNofAdults">Number of Adults</string>
+    <string name="mgNofChild">Number of Children</string>
+    <string name="CalculateTPrice">Calculate Ticket Price</string>
 </resources>

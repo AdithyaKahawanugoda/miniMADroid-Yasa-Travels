@@ -5,6 +5,7 @@
     android:id="@+id/sr-scrollv"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back4"
     android:orientation="vertical"
     android:paddingLeft="10dp"
     android:paddingTop="10dp"
@@ -18,13 +19,14 @@
 
         <TextView
             android:id="@+id/srLocationsTopic"
-            android:layout_width="263dp"
-            android:layout_height="match_parent"
+            android:layout_width="265dp"
+            android:layout_height="102dp"
             android:fontFamily="sans-serif-condensed-light"
             android:paddingStart="30dp"
             android:paddingTop="20dp"
             android:paddingBottom="40dp"
             android:text="@string/searchResultsLTopic"
+            android:textColor="#070000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -35,6 +37,7 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-smallcaps"
             android:text="TextView"
+            android:textColor="#070000"
             android:textSize="18sp"
             android:textStyle="bold" />
 

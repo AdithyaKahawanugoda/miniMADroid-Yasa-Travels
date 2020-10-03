@@ -22,24 +22,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.056" />
 
-    <ImageView
-        android:id="@+id/upProfileImage"
-        android:layout_width="262dp"
-        android:layout_height="259dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243"
-        app:srcCompat="@drawable/dp2" />
-
     <TextView
         android:id="@+id/upUserName"
         android:layout_width="275dp"
         android:layout_height="43dp"
         android:fontFamily="sans-serif-thin"
-        android:text="@string/user_name"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -56,7 +43,6 @@
         android:layout_width="280dp"
         android:layout_height="45dp"
         android:fontFamily="sans-serif-thin"
-        android:text="@string/user_phone"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -73,7 +59,6 @@
         android:layout_width="334dp"
         android:layout_height="48dp"
         android:fontFamily="sans-serif-thin"
-        android:text="@string/user_email"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -148,5 +133,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.007"
-        app:srcCompat="@drawable/dp2" />
+        app:srcCompat="@drawable/profileavatar1" />
+
+    <ImageView
+        android:id="@+id/upProfileImage"
+        android:layout_width="200dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upAppName"
+        app:srcCompat="@drawable/profileavatar1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
