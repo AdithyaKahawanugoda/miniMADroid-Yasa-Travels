@@ -14,6 +14,7 @@ public class UserHomeActivity extends AppCompatActivity {
 
     private ImageButton profileButton;
     private ImageButton aboutusButton;
+    private ImageButton CurrancyConvertorBtn;
     private Button explore;
 
     @Override
@@ -39,6 +40,15 @@ public class UserHomeActivity extends AppCompatActivity {
             }
         });
 
+        //switch to currancy convertor page by clicking  currancy convertor icon
+        CurrancyConvertorBtn = (ImageButton) findViewById(R.id.home_CurrencyConvertorIcon);
+        CurrancyConvertorBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCurrancyConvertor();
+            }
+        });
+
         //switch to search window
         explore = (Button) findViewById(R.id.homeExploreButton);
         explore.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +69,12 @@ public class UserHomeActivity extends AppCompatActivity {
     //switch to user profile by clicking profile icon
     public void openUserProfile() {
         Intent intent = new Intent(this,UserProfileActivity.class);
+        startActivity(intent);
+    }
+
+    //switch to currancy convertor by clicking currancy convertor icon
+    public void  openCurrancyConvertor() {
+        Intent intent = new Intent(this,CurrancyConvertorActivity.class);
         startActivity(intent);
     }
 

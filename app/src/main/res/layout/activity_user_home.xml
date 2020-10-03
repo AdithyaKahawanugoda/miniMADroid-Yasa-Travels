@@ -51,8 +51,8 @@
 
     <Button
         android:id="@+id/homeExploreButton"
-        android:layout_width="147dp"
-        android:layout_height="61dp"
+        android:layout_width="124dp"
+        android:layout_height="52dp"
         android:background="@android:color/holo_purple"
         android:backgroundTint="@android:color/holo_purple"
         android:fontFamily="cursive"
@@ -67,7 +67,7 @@
 
     <ImageView
         android:id="@+id/homeImage2"
-        android:layout_width="201dp"
+        android:layout_width="174dp"
         android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +103,7 @@
         app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintVertical_bias="0.975" />
 
     <TextView
         android:id="@+id/homeProfile"
@@ -119,7 +119,7 @@
         app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <ImageButton
         android:id="@+id/home_profileIcon"
@@ -148,7 +148,7 @@
         app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956" />
+        app:layout_constraintVertical_bias="0.968" />
 
     <ImageButton
         android:id="@+id/homeAboutusIcon"
@@ -190,21 +190,23 @@
 
     <ImageButton
         android:id="@+id/home_CurrencyConvertorIcon"
-        android:layout_width="65dp"
-        android:layout_height="63dp"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="56dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/homeAboutusIcon"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeDescrption1"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/convertor_icon" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="76dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="12dp"
         android:fontFamily="cursive"
         android:text="@string/home_convertor"
         android:textAlignment="center"
@@ -212,6 +214,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/homeAboutus"
-        app:layout_constraintStart_toEndOf="@+id/homeProfile" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/homeProfile"
+        app:layout_constraintTop_toBottomOf="@+id/home_CurrencyConvertorIcon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
