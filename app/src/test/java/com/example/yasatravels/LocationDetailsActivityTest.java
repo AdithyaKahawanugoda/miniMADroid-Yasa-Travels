@@ -56,4 +56,20 @@ public class LocationDetailsActivityTest {
 
         assertEquals(1250, estimateVal,0.1); // check pass or fail
     }
+
+    //Test Case4
+    @Test
+    public void calculatesumm3_isCorrect(){      //This test case did by Yasasmi-IT19025704
+
+        int AdultTicketPrice = 200;
+        int ChildTicketPrice = 100;
+        int NoOfAdults = 2;
+        int NoOfChildren = 2;
+
+        int estimateVal = locationDetailsActivity.CalculatePrice(AdultTicketPrice,ChildTicketPrice,NoOfAdults , NoOfChildren);
+
+        assertEquals(600, estimateVal,0.1); // check pass or fail
+    }
+
+
     }
