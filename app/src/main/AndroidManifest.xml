@@ -79,7 +79,10 @@
         <activity android:name=".UpdateUserProfile"
             android:parentActivityName=".UserProfileActivity"/>
         <activity android:name=".UserProfileActivity"
-            android:parentActivityName=".UserHomeActivity"/>
+            android:parentActivityName=".UserHomeActivity">
+
+
+        </activity>
         <activity android:name=".UserHomeActivity"
             android:theme="@style/AppTheme.noActionBar" >
 
@@ -104,7 +107,9 @@
         </activity>
 
 <!--        -->
+            <activity android:name=".AdminLoginActivity">
 
+            </activity>
         <activity android:name=".ResultsHotelsActivity"
             android:parentActivityName=".SearchActivity">
 
