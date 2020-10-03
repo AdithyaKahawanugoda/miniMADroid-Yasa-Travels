@@ -59,6 +59,7 @@ public class HotelDetailsActivity extends AppCompatActivity {
         chL = (CheckBox) findViewById(R.id.chlunch);
         chD = (CheckBox) findViewById(R.id.chdinner);
         chLodgin = (CheckBox) findViewById(R.id.chlodgin);
+
         headCount = (EditText) findViewById(R.id.headcount);
         btnSum = (ImageButton) findViewById(R.id.btnsum);
         amount = (TextView) findViewById(R.id.tvSum);
@@ -124,6 +125,8 @@ public class HotelDetailsActivity extends AppCompatActivity {
     public void contactHandler(View view){}
 
     public float calculateSum(int heads,int Doublebed,int Singlebed,int Breakfast,int Lunch,int Dinner){
+
+
         float estimationVal;
         int singleRooms;
         int doubleRooms;
@@ -135,17 +138,15 @@ public class HotelDetailsActivity extends AppCompatActivity {
         }
         if(chB.isChecked()){
             calbreakfast = Breakfast * heads;
-
         }
         if(chL.isChecked()){
             callunch = Lunch * heads;
-
         }
         if(chD.isChecked()){
             caldinner = Dinner * heads;
-
         }
-        estimationVal = callodgin+calbreakfast+callunch+caldinner;
+
+        estimationVal = finalCalc(callodgin,calbreakfast,callunch,caldinner);
         callodgin = 0;
         calbreakfast = 0;
         caldinner = 0;
@@ -153,4 +154,10 @@ public class HotelDetailsActivity extends AppCompatActivity {
         return estimationVal;
 
     }
+
+    float finalCalc(int callodgin, int calbreakfast, int callunch, int caldinner) {
+        float total = callodgin+calbreakfast+callunch+caldinner;
+        return total;
+    }
+
 }
