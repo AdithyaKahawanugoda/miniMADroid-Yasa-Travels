@@ -66,16 +66,16 @@ public class HotelDetailsActivity extends AppCompatActivity {
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Name = snapshot.child("name").getValue().toString();
-                Description = snapshot.child("description").getValue().toString();
-                ContactNo = snapshot.child("contactNo").getValue().toString();
-                ImgUrl = snapshot.child("image").getValue().toString();
+                Name = snapshot.child("name").getValue().toString().trim();
+                Description = snapshot.child("description").getValue().toString().trim();
+                ContactNo = snapshot.child("contactNo").getValue().toString().trim();
+                ImgUrl = snapshot.child("image").getValue().toString().trim();
 
-                Breakfast = snapshot.child("breakfast").getValue().toString();
-                Lunch = snapshot.child("lunch").getValue().toString();
-                Dinner = snapshot.child("dinner").getValue().toString();
-                Singlebed = snapshot.child("singleBed").getValue().toString();
-                Doublebed = snapshot.child("doubleBed").getValue().toString();
+                Breakfast = snapshot.child("breakfast").getValue().toString().trim();
+                Lunch = snapshot.child("lunch").getValue().toString().trim();
+                Dinner = snapshot.child("dinner").getValue().toString().trim();
+                Singlebed = snapshot.child("singleBed").getValue().toString().trim();
+                Doublebed = snapshot.child("doubleBed").getValue().toString().trim();
 
                 name.setText(Name);
                 description.setText(Description);
