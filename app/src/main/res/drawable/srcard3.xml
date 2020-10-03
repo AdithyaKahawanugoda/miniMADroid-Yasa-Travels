@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <!--    color gradient for cards in search results-->
-    <gradient android:startColor="#1D2B64" android:endColor="#F8CDDA" />
+    <gradient android:startColor="#67B26F" android:endColor="#4ca2cd" />
 </shape>
