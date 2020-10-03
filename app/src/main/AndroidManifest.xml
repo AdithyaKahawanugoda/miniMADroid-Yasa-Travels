@@ -18,7 +18,18 @@
 
 
 
+
         </activity>
+
+
+            <activity android:name=".AdminLoginActivity">
+
+
+
+
+
+
+            </activity>
 
 <!--        ////////////////////////////////////////////////////////////////-->
         <activity android:name=".AddGuideActivity"
@@ -33,10 +44,7 @@
             android:parentActivityName=".ManageRidesActivity"/>
         <activity android:name=".ManageUsersActivity"
             android:parentActivityName=".AdminProfileActivity">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+
         </activity>
         <activity android:name=".EditGuideActivity"
             android:parentActivityName=".ManageGuidesActivity"/>
@@ -76,13 +84,21 @@
 
         </activity>
         <activity android:name=".AdminProfileActivity"
-            android:theme="@style/AppTheme.noActionBar"/>
+            android:theme="@style/AppTheme.noActionBar">
+
+
+
+
+        </activity>
         <activity android:name=".AboutUsActivity"
             android:parentActivityName=".UserHomeActivity"/>
         <activity android:name=".UpdateUserProfile"
             android:parentActivityName=".UserProfileActivity"/>
         <activity android:name=".UserProfileActivity"
-            android:parentActivityName=".UserHomeActivity"/>
+            android:parentActivityName=".UserHomeActivity">
+
+
+        </activity>
         <activity android:name=".UserHomeActivity"
             android:theme="@style/AppTheme.noActionBar" >
 
@@ -106,8 +122,6 @@
 
         </activity>
 
-<!--        -->
-
         <activity android:name=".ResultsHotelsActivity"
             android:parentActivityName=".SearchActivity">
 
@@ -116,6 +130,16 @@
             android:parentActivityName=".LoginActivity"/>
         <activity android:name=".SearchActivity"
             android:parentActivityName=".UserHomeActivity">
+
+
+
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+
+
+
 
         </activity>
         <activity
