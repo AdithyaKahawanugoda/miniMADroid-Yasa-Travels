@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back4">
+    android:background="@drawable/background2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,18 +42,12 @@
 
         <TextView
             android:id="@+id/tvLocationDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="356dp"
+            android:layout_height="110dp"
             android:text="location description"
             android:textAlignment="viewStart"
             android:textColor="#070000"
             android:textStyle="italic" />
-
-        <RatingBar
-            android:id="@+id/LocationRateInput"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fadingEdge="horizontal|vertical" />
 
         <Button
             android:id="@+id/LRateSubmit"
@@ -73,7 +67,7 @@
 
         <EditText
             android:id="@+id/tfNumberOfAdults"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
@@ -94,7 +88,7 @@
 
         <EditText
             android:id="@+id/tfNumberOfChildren"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
