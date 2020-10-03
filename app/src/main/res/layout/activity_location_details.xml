@@ -34,7 +34,7 @@
         <ImageView
             android:id="@+id/ivLocationImage"
             android:layout_width="300dp"
-            android:layout_height="200dp"
+            android:layout_height="168dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
@@ -42,8 +42,8 @@
 
         <TextView
             android:id="@+id/tvLocationDescription"
-            android:layout_width="356dp"
-            android:layout_height="110dp"
+            android:layout_width="345dp"
+            android:layout_height="106dp"
             android:text="location description"
             android:textAlignment="viewStart"
             android:textColor="#070000"
@@ -58,7 +58,7 @@
 
         <TextView
             android:id="@+id/NumberOfAdults"
-            android:layout_width="match_parent"
+            android:layout_width="289dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/mgNofAdults"
@@ -79,8 +79,8 @@
 
         <TextView
             android:id="@+id/NumberOfChildren"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="309dp"
+            android:layout_height="37dp"
             android:layout_gravity="center"
             android:text="@string/mgNofChild"
             android:textColor="#070000"

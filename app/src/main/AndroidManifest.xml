@@ -18,7 +18,21 @@
 
 
 
+
         </activity>
+
+
+            <activity android:name=".AdminLoginActivity">
+
+
+                    <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+                            <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+
+
+
+            </activity>
 
 <!--        ////////////////////////////////////////////////////////////////-->
         <activity android:name=".AddGuideActivity"
@@ -73,7 +87,12 @@
 
         </activity>
         <activity android:name=".AdminProfileActivity"
-            android:theme="@style/AppTheme.noActionBar"/>
+            android:theme="@style/AppTheme.noActionBar">
+
+
+
+
+        </activity>
         <activity android:name=".AboutUsActivity"
             android:parentActivityName=".UserHomeActivity"/>
         <activity android:name=".UpdateUserProfile"
@@ -113,10 +132,13 @@
             android:parentActivityName=".LoginActivity"/>
         <activity android:name=".SearchActivity"
             android:parentActivityName=".UserHomeActivity">
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+
+
+
+
+
+
+
         </activity>
         <activity
             android:name=".LoginActivity"
