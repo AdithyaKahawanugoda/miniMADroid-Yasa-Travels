@@ -27,10 +27,10 @@
             <activity android:name=".AdminLoginActivity">
 
 
-                    <intent-filter>
-                            <action android:name="android.intent.action.MAIN" />
-                            <category android:name="android.intent.category.LAUNCHER" />
-                    </intent-filter>
+<!--                    <intent-filter>-->
+<!--                            <action android:name="android.intent.action.MAIN" />-->
+<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                    </intent-filter>-->
 
 
             </activity>
@@ -72,7 +72,12 @@
 
         </activity>
         <activity android:name=".ManageRidesActivity"
-            android:parentActivityName=".AdminProfileActivity"/>
+            android:parentActivityName=".AdminProfileActivity">
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+        </activity>
 
 <!--        ////////////////////////////////////////////////////////-->
         <activity android:name=".ManageLocationsActivity"
@@ -134,20 +139,25 @@
             android:parentActivityName=".LoginActivity"/>
         <activity android:name=".SearchActivity"
             android:parentActivityName=".UserHomeActivity">
-
-
-
-
-
-
-
         </activity>
-        <activity
+
+            <activity android:name=".CurrancyConvertorActivity"
+                android:parentActivityName=".UserHomeActivity">
+            </activity>
+
+
+            <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.noActionBar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.noActionBar">
+
+<!--                <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+
 
         </activity>
     </application>
