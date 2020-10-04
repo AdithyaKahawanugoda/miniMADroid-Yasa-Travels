@@ -204,17 +204,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.894" />
 
-    <ImageButton
-        android:id="@+id/profileUpdate_InsertPicure"
-        android:layout_width="83dp"
-        android:layout_height="76dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195"
-        app:srcCompat="@drawable/ip1" />
-
     <EditText
         android:id="@+id/profileUpdate_InputPhone"
         android:layout_width="355dp"
@@ -237,6 +226,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/profileavatar1" />
+
+    <ImageView
+        android:id="@+id/profileUpdate_InsertPicure"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileUpdate_appName"
+        app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/profileavatar1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

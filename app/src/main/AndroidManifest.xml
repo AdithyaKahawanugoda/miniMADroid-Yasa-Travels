@@ -17,12 +17,25 @@
             android:parentActivityName=".ManageLocationsActivity">
 
 
+<!--                <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
+
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+
+
+                <!--                <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
+<!---->
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
 
         </activity>
 
 <!--        ////////////////////////////////////////////////////////////////-->
         <activity android:name=".AddGuideActivity"
             android:parentActivityName=".ManageGuidesActivity">
+
 
         </activity>
         <activity android:name=".AddHotelActivity"
@@ -35,8 +48,15 @@
             android:parentActivityName=".AdminProfileActivity">
 
         </activity>
+            <activity android:name=".CurrancyConvertorActivity">
+
+
+            </activity>
         <activity android:name=".EditGuideActivity"
-            android:parentActivityName=".ManageGuidesActivity"/>
+            android:parentActivityName=".ManageGuidesActivity">
+
+
+        </activity>
         <activity android:name=".EditRideActivity"
             android:parentActivityName=".ManageRidesActivity"/>
 
@@ -64,11 +84,18 @@
 
         </activity>
         <activity android:name=".ManageRidesActivity"
-            android:parentActivityName=".AdminProfileActivity"/>
+            android:parentActivityName=".AdminProfileActivity">
+<!--                <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
+
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                </intent-filter>-->
+        </activity>
 
 <!--        ////////////////////////////////////////////////////////-->
         <activity android:name=".ManageLocationsActivity"
             android:parentActivityName=".AdminProfileActivity">
+
 
 
         </activity>
@@ -80,7 +107,9 @@
 
         </activity>
         <activity android:name=".AdminProfileActivity"
-            android:theme="@style/AppTheme.noActionBar"/>
+            android:theme="@style/AppTheme.noActionBar">
+
+        </activity>
         <activity android:name=".AboutUsActivity"
             android:parentActivityName=".UserHomeActivity"/>
         <activity android:name=".UpdateUserProfile"
@@ -94,9 +123,15 @@
         <activity android:name=".RideDetailsActivity"
             android:parentActivityName=".ResultsRidesActivity"/>
         <activity android:name=".LocationDetailsActivity"
-            android:parentActivityName=".ResultsLocationsActivity"/>
+            android:parentActivityName=".ResultsLocationsActivity">
+
+
+        </activity>
         <activity android:name=".GuideDetailsActivity"
-            android:parentActivityName=".ResultsGuidesActivity"/>
+            android:parentActivityName=".ResultsGuidesActivity">
+
+
+        </activity>
         <activity android:name=".HotelDetailsActivity"
             android:parentActivityName=".ResultsHotelsActivity"/>
         <activity android:name=".ResultsGuidesActivity"
@@ -107,6 +142,8 @@
 <!--        ////////////////////////////-->
         <activity android:name=".ResultsLocationsActivity"
             android:parentActivityName=".SearchActivity">
+
+
 
         </activity>
 
@@ -121,6 +158,7 @@
         <activity android:name=".SearchActivity"
             android:parentActivityName=".UserHomeActivity">
 
+
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -128,7 +166,11 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.noActionBar">
+                <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
 
+                        <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
         </activity>
     </application>
 

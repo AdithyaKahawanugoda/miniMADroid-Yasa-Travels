@@ -1,3 +1,5 @@
+
+
 package com.example.yasatravels;
 
 import org.junit.Before;
@@ -18,7 +20,7 @@ public class LocationDetailsActivityTest {
         }
 
         @Test
-        public void calculatesumm_isCorrect(){
+        public void calculatesumm_isCorrect(){    // Done by Priyasarani W.A.L - IT19802022
 
         int AdultTicketPrice = 50;
         int ChildTicketPrice = 20;
@@ -31,7 +33,7 @@ public class LocationDetailsActivityTest {
         }
 
         @Test
-        public void calculatesumm1_isCorrect(){
+        public void calculatesumm1_isCorrect(){    // Done by Priyasarani W.A.L - IT19802022
 
             int AdultTicketPrice = 50;
             int ChildTicketPrice = 20;
@@ -45,7 +47,7 @@ public class LocationDetailsActivityTest {
 
 
     @Test
-    public void calculatesumm2_isCorrect(){
+    public void calculatesumm2_isCorrect(){      // Done by Priyasarani W.A.L - IT19802022
 
         int AdultTicketPrice = 100;
         int ChildTicketPrice = 50;
@@ -57,9 +59,13 @@ public class LocationDetailsActivityTest {
         assertEquals(1250, estimateVal,0.1); // check pass or fail
     }
 
+
+
+
+
     //Test Case4
     @Test
-    public void calculatesumm3_isCorrect(){      //This test case did by Yasasmi-IT19025704
+    public void calculatesumm3_isCorrect(){      //This test case done by Yasasmi-IT19025704
 
         int AdultTicketPrice = 200;
         int ChildTicketPrice = 100;
