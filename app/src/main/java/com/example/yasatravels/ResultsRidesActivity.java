@@ -1,10 +1,5 @@
 package com.example.yasatravels;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -21,11 +21,12 @@ import com.google.firebase.database.Query;
 
 public class ResultsRidesActivity extends AppCompatActivity {
 
-    public static final String EXTRA_GRESULTID = "rideID";
+    public static final String EXTRA_RRESULTID = "hotelID";
 
-    private RecyclerView ridelist;
+    private RecyclerView rideList;
     private DatabaseReference dbRef;
     private Query query;
+
     private TextView distName;
 
     @Override
@@ -36,15 +37,17 @@ public class ResultsRidesActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String input = intent.getStringExtra(SearchActivity.EXTRA_TEXTDISTRICT);
 
-        distName = (TextView) findViewById(R.id.inputdist);
+
+        distName = (TextView) findViewById(R.id.inputdistR);
         distName.setText(input);
 
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Rides");
-        query = dbRef.orderByChild("District").equalTo(input);
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Ride");
+        query = dbRef.orderByChild("district").equalTo(input);
 
-        ridelist = (RecyclerView) findViewById(R.id.resultRlist);
-        ridelist.setHasFixedSize(true);
-        ridelist.setLayoutManager(new LinearLayoutManager(this));
+        rideList = (RecyclerView) findViewById(R.id.resultRlist);
+        rideList.setHasFixedSize(true);
+        rideList.setLayoutManager(new LinearLayoutManager(this));
+
     }
 
     @Override
@@ -63,7 +66,7 @@ public class ResultsRidesActivity extends AppCompatActivity {
                         String dataId = getRef(i).getKey();
                         // Log.i("detailsHanderCheck", "Touched" + dataId);
                         Intent intent = new Intent(ResultsRidesActivity.this, RideDetailsActivity.class);
-                        intent.putExtra(EXTRA_GRESULTID, dataId);
+                        intent.putExtra(EXTRA_RRESULTID, dataId);
                         startActivity(intent);
                     }
                 });
@@ -80,6 +83,9 @@ public class ResultsRidesActivity extends AppCompatActivity {
         };
 
         firebaseRecyclerAdapter.startListening();
-        ridelist.setAdapter(firebaseRecyclerAdapter);
+        rideList.setAdapter(firebaseRecyclerAdapter);
     }
+
+
+
 }
