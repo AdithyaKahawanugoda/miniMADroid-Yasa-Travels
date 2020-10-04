@@ -14,6 +14,9 @@ public class AdminProfileActivity extends AppCompatActivity {
 
     TextView ManageGuidesBtn;
     TextView ManageLocationBtn;
+    TextView ManageHotelBtn;
+    TextView ManageRideBtn;
+    TextView ManageUserBtn;
 
 
     @Override
@@ -23,6 +26,9 @@ public class AdminProfileActivity extends AppCompatActivity {
 
         ManageGuidesBtn = findViewById(R.id.textView16);
         ManageLocationBtn = findViewById(R.id.textView17);
+        ManageHotelBtn = findViewById(R.id.textView15);
+        ManageRideBtn = findViewById(R.id.textView14);
+        ManageUserBtn = findViewById(R.id.textView18);
 
         ManageGuidesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +41,20 @@ public class AdminProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),ManageLocationsActivity.class));
+            }
+        });
+
+        ManageHotelBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ManageRidesActivity.class));
+            }
+        });
+
+        ManageUserBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ManageUsersActivity.class));
             }
         });
 
