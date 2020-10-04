@@ -43,7 +43,7 @@ public class AddRideActivity extends AppCompatActivity implements AdapterView.On
         setContentView(R.layout.activity_add_ride);
 
         mystorage = FirebaseStorage.getInstance().getReference();
-        mydatabase = FirebaseDatabase.getInstance().getReference().child("Rides");
+        mydatabase = FirebaseDatabase.getInstance().getReference().child("Ride");
 
         rideType = (EditText) findViewById(R.id.typeInputAddRide);
         driver = (EditText) findViewById(R.id.driverAddRides);
@@ -128,14 +128,14 @@ public class AddRideActivity extends AppCompatActivity implements AdapterView.On
                                 public void onSuccess(Uri uri) {
                                     String url = uri.toString();
                                     DatabaseReference newRide = mydatabase.push();
-                                    newRide.child("Ride Type").setValue(rType);
-                                    newRide.child("Driver's name").setValue(rDriver);
-                                    newRide.child("Vehicle No").setValue(rvehicleNo);
-                                    newRide.child("Cost per 1KM").setValue(rcost);
-                                    newRide.child("Description").setValue(rDescription);
-                                    newRide.child("contactNo").setValue(rPhone);
-                                    newRide.child("District").setValue(district);
-                                    newRide.child("Vehicle image").setValue(url);
+                                    newRide.child("ridetype").setValue(rType);
+                                    newRide.child("driversname").setValue(rDriver);
+                                    newRide.child("vehicleno").setValue(rvehicleNo);
+                                    newRide.child("costperkm").setValue(rcost);
+                                    newRide.child("description").setValue(rDescription);
+                                    newRide.child("contactno").setValue(rPhone);
+                                    newRide.child("ridedistrict").setValue(district);
+                                    newRide.child("vehicle image").setValue(url);
                                 }
                             });
                         }
