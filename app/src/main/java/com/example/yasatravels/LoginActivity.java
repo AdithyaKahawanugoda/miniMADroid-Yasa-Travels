@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView signUp;
     private ProgressBar progBar;
     private FirebaseAuth auth;
-
+    private TextView AdLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +38,11 @@ public class LoginActivity extends AppCompatActivity {
         progBar = findViewById(R.id.loginProgressBar);
         login = findViewById(R.id.btnLogin);
         signUp = findViewById(R.id.create);
-
+        AdLogin = findViewById(R.id.AdminLogin);
         auth = FirebaseAuth.getInstance();
+
+
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +88,15 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),SignupActivity.class));
             }
         });
+
+        AdLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),AdminLoginActivity.class));
+            }
+        });
+
+
 
     }
 }

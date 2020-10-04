@@ -78,8 +78,9 @@
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:background="@drawable/btn_type1"
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,10 +98,10 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintHorizontal_bias="0.359"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintVertical_bias="0.076" />
 
     <ImageView
         android:id="@+id/loginImg"
@@ -126,21 +127,34 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv-ifNoAccount"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <TextView
         android:id="@+id/create"
-        android:layout_width="76dp"
-        android:layout_height="22dp"
+        android:layout_width="68dp"
+        android:layout_height="24dp"
         android:text="@string/signup"
         android:textAlignment="center"
         android:textColor="#03A9F4"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toEndOf="@+id/tv-ifNoAccount"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/AdminLogin"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="Click Here to Log in as ADMIN"
+        android:textColor="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv-ifNoAccount"
+        app:layout_constraintVertical_bias="0.153" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
