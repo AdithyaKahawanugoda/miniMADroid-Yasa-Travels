@@ -244,6 +244,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileUpdate_appName"
         app:layout_constraintVertical_bias="0.018"
-        app:srcCompat="@drawable/dp2" />
+        app:srcCompat="@drawable/profileavatar1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
