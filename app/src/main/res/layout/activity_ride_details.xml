@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ridesdetails4"
     android:orientation="vertical"
     tools:context=".RideDetailsActivity"
     android:padding="10dp">
 
-    <TextView
-        android:id="@+id/rideName"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="ride name"
-        android:textColor="#000000"
-        android:textSize="30sp" />
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/rideName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="ride name"
+            android:textColor="#000000"
+            android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/rideImage"
@@ -25,36 +32,79 @@
         android:layout_height="200dp"
         android:transitionName="transition1"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         />
 
-    <TextView
-        android:id="@+id/rideType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ride type"
-        android:textAlignment="viewStart"
-        android:textColor="#000000"
-        android:textStyle="italic" />
+        <TextView
+            android:id="@+id/rideType"
+            android:layout_width="375dp"
+            android:layout_height="38dp"
+            android:background="#A9C5F88A"
+            android:text="ride type"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/rideVehicleNo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Vehicle No" />
+        <TextView
+            android:id="@+id/txtVehicleNo"
+            android:layout_width="375dp"
+            android:layout_height="match_parent"
+            android:background="#A9C5F88A"
+            android:text="Vehicle Reg.No :"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/rideCost"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cost per km" />
+        <TextView
+            android:id="@+id/rideVehicleNo"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:background="#A9C5F88A"
+            android:text="Vehicle No"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/rideDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ride Description / Extra" />
+        <TextView
+            android:id="@+id/txtCost"
+            android:layout_width="375dp"
+            android:layout_height="match_parent"
+            android:background="#A9C5F88A"
+            android:text="Cost per 1KM :"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rideCost"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:background="#A9C5F88A"
+            android:text="Cost per km"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="375dp"
+            android:layout_height="match_parent"
+            android:background="#A9C5F88A"
+            android:text="Description :"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rideDescription"
+            android:layout_width="375dp"
+            android:layout_height="81dp"
+            android:background="#A9C5F88A"
+            android:text="Ride Description / Extra"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
     <Button
         android:id="@+id/contactBtn"
@@ -68,17 +118,37 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"/>
 
-    <Button
-        android:id="@+id/ridePaymentBtn"
-        android:layout_width="107dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_type1"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="Button" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="378dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rideDistance"
+                android:layout_width="375dp"
+                android:layout_height="41dp"
+                android:hint="Enter the rough distance for your journey"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textColorLink="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/ridePaymentBtn"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_type1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="check payment"
+            android:textAlignment="center" />
+
+    </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>
