@@ -72,7 +72,7 @@ public class UserHomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //switch to currancy convertor by clicking currancy convertor icon
+    //switch to currancy converter by clicking currancy converter icon
     public void  openCurrancyConvertor() {
         Intent intent = new Intent(this,CurrancyConvertorActivity.class);
         startActivity(intent);

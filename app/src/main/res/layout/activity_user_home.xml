@@ -190,13 +190,13 @@
 
     <ImageButton
         android:id="@+id/home_CurrencyConvertorIcon"
-        android:layout_width="60dp"
-        android:layout_height="48dp"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
         android:layout_marginBottom="56dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/homeAboutusIcon"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.946"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homeDescrption1"
         app:layout_constraintVertical_bias="1.0"
@@ -206,16 +206,15 @@
         android:id="@+id/textView9"
         android:layout_width="83dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="cursive"
         android:text="@string/home_convertor"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/homeAboutus"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/homeProfile"
-        app:layout_constraintTop_toBottomOf="@+id/home_CurrencyConvertorIcon" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeImage2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

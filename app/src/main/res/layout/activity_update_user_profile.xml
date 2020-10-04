@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/update3"
     tools:context=".UpdateUserProfile">
 
     <TextView
@@ -55,6 +56,7 @@
         android:id="@+id/profileUpdate_InputName"
         android:layout_width="352dp"
         android:layout_height="43dp"
+        android:backgroundTint="#FC6831C8"
         android:hint=""
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -82,6 +84,7 @@
         android:id="@+id/profileUpdate_InputAddress"
         android:layout_width="353dp"
         android:layout_height="43dp"
+        android:backgroundTint="#FC6831C8"
         android:ems="10"
         android:inputType="textPostalAddress"
         android:textSize="14sp"
@@ -124,6 +127,7 @@
         android:id="@+id/profileUpdate_InputEmail"
         android:layout_width="348dp"
         android:layout_height="49dp"
+        android:backgroundTint="#FC6831C8"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textSize="14sp"
@@ -152,6 +156,7 @@
         android:id="@+id/profileUpdate_InputPassword"
         android:layout_width="349dp"
         android:layout_height="48dp"
+        android:backgroundTint="#FC6831C8"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="14sp"
@@ -180,6 +185,7 @@
         android:id="@+id/profileUpdate_InputReenterPwd"
         android:layout_width="347dp"
         android:layout_height="45dp"
+        android:backgroundTint="#FC6831C8"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="14sp"
@@ -208,6 +214,7 @@
         android:id="@+id/profileUpdate_InputPhone"
         android:layout_width="355dp"
         android:layout_height="43dp"
+        android:backgroundTint="#FC6831C8"
         android:ems="10"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -237,6 +244,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileUpdate_appName"
         app:layout_constraintVertical_bias="0.018"
-        app:srcCompat="@drawable/profileavatar1" />
+        app:srcCompat="@drawable/dp2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
