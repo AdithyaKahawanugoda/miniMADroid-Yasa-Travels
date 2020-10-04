@@ -30,7 +30,7 @@ public class ManageRidesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_rides);
 
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Rides");
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Ride");
 
         ridesList = (RecyclerView) findViewById(R.id.fullRidesList);
         ridesList.setHasFixedSize(true);

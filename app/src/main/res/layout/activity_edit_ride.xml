@@ -12,23 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/tvUploadImg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:paddingTop="10dp"
-            android:text="@string/mgChangeImg"
-            android:textAlignment="center"
-            android:textSize="24sp" />
 
-        <ImageView
-            android:id="@+id/imgUploadAH"
-            android:layout_width="288dp"
-            android:layout_height="133dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/btn_type_delete" />
         <TextView
             android:id="@+id/tvType"
             android:layout_width="match_parent"
@@ -38,7 +22,7 @@
             android:text="@string/rideType"
             android:textSize="24sp" />
         <EditText
-            android:id="@+id/tfType"
+            android:id="@+id/rideEditType"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_gravity="center"
@@ -59,7 +43,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/tfAHname"
+            android:id="@+id/rideEditDriver"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_gravity="center"
@@ -68,24 +52,6 @@
             android:background="@drawable/btn_type_delete"
             android:ems="10"
             android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/tvDistrict"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingStart="30dp"
-            android:text="@string/mgDistrict"
-            android:textSize="24sp" />
-
-        <Spinner
-            android:id="@+id/spinnerHADistrict"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/dropdown_spinner_custom" />
 
         <TextView
             android:id="@+id/tvVno"
@@ -97,7 +63,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/tfVno"
+            android:id="@+id/rideEditVehicleNo"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_gravity="center"
@@ -115,7 +81,7 @@
             android:text="@string/rideCPkm"
             android:textSize="24sp" />
         <EditText
-            android:id="@+id/tfCPkm"
+            android:id="@+id/rideEditCost"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_gravity="center"
@@ -135,7 +101,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/tfAHdescription"
+            android:id="@+id/rideEditDescription"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -155,7 +121,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/tfAHcontact"
+            android:id="@+id/rideEditPhone"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_gravity="center"

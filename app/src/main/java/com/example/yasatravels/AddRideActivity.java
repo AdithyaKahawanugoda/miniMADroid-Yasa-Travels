@@ -129,13 +129,13 @@ public class AddRideActivity extends AppCompatActivity implements AdapterView.On
                                     String url = uri.toString();
                                     DatabaseReference newRide = mydatabase.push();
                                     newRide.child("ridetype").setValue(rType);
-                                    newRide.child("driversname").setValue(rDriver);
+                                    newRide.child("name").setValue(rDriver);
                                     newRide.child("vehicleno").setValue(rvehicleNo);
                                     newRide.child("costperkm").setValue(rcost);
                                     newRide.child("description").setValue(rDescription);
-                                    newRide.child("contactno").setValue(rPhone);
-                                    newRide.child("ridedistrict").setValue(district);
-                                    newRide.child("vehicle image").setValue(url);
+                                    newRide.child("contactNo").setValue(rPhone);
+                                    newRide.child("district").setValue(district);
+                                    newRide.child("image").setValue(url);
                                 }
                             });
                         }
