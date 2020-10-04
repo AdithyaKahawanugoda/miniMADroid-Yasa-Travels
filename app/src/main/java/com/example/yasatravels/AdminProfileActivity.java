@@ -47,6 +47,13 @@ public class AdminProfileActivity extends AppCompatActivity {
         ManageHotelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ManageHotelsActivity.class));
+            }
+        });
+
+        ManageRideBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),ManageRidesActivity.class));
             }
         });
