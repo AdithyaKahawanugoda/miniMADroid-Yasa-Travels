@@ -23,12 +23,12 @@
 
     <TextView
         android:id="@+id/tvUploadImg"
-        android:layout_width="410dp"
+        android:layout_width="385dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:paddingTop="10dp"
-        android:text="@string/mgChangeImg"
+        android:text="Image"
         android:textAlignment="center"
         android:textColor="#090000"
         android:textSize="18sp" />
@@ -43,7 +43,7 @@
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="367dp"
+        android:layout_width="373dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingStart="30dp"
@@ -133,7 +133,7 @@
     <TextView
         android:id="@+id/tvContact"
         android:layout_width="383dp"
-        android:layout_height="41dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingStart="30dp"
         android:text="@string/mgContact"
@@ -154,8 +154,8 @@
         android:paddingRight="5dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="449dp"
-        android:layout_height="61dp">
+        android:layout_width="391dp"
+        android:layout_height="58dp">
 
         <Button
             android:id="@+id/updateGbtn"
@@ -175,14 +175,15 @@
             android:layout_width="83dp"
             android:layout_height="41dp"
             android:layout_gravity="center"
-            android:layout_marginEnd="148dp"
+            android:layout_marginEnd="100dp"
             android:background="@drawable/btn_type1"
             android:text="@string/mgDeleteBtn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.345"
             app:layout_constraintStart_toEndOf="@+id/updateHbtn"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

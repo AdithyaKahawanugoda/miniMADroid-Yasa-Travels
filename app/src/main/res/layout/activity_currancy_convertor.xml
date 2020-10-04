@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img3"
+    android:background="@drawable/back7"
     tools:context=".CurrancyConvertorActivity">
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="344dp"
-        android:layout_height="61dp"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
         android:background="#D0EDF1"
         android:fontFamily="casual"
         android:gravity="center"

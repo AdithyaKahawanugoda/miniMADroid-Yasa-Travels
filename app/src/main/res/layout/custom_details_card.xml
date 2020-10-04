@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/srcard"
+        android:background="@drawable/srcard3"
         android:elevation="20dp"
         android:orientation="vertical">
 

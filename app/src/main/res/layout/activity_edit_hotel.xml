@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditHotelActivity"
+    android:background="@drawable/aditestnewss"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".EditHotelActivity">
 
 
     <LinearLayout
@@ -14,24 +15,24 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-<!--        <TextView-->
-<!--            android:id="@+id/tvUploadImg"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:paddingTop="10dp"-->
-<!--            android:text="@string/mgChangeImg"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textSize="24sp" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvUploadImg"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:paddingTop="10dp"-->
+        <!--            android:text="@string/mgChangeImg"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textSize="24sp" />-->
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imgUploadAH"-->
-<!--            android:layout_width="334dp"-->
-<!--            android:layout_height="135dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:scaleType="centerCrop"-->
-<!--            app:srcCompat="@drawable/btn_type_delete" />-->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgUploadAH"-->
+        <!--            android:layout_width="334dp"-->
+        <!--            android:layout_height="135dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginBottom="20dp"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            app:srcCompat="@drawable/btn_type_delete" />-->
 
         <TextView
             android:id="@+id/tvName"
@@ -40,6 +41,7 @@
             android:layout_gravity="center"
             android:paddingStart="30dp"
             android:text="@string/mgName"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
         <EditText
@@ -54,27 +56,28 @@
             android:inputType="textPersonName"
             android:paddingStart="10dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            android:paddingRight="5dp"
+            android:textColor="#000000" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/tvDistrict"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:paddingStart="30dp"-->
-<!--            android:text="@string/mgDistrict"-->
-<!--            android:textSize="24sp" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvDistrict"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:paddingStart="30dp"-->
+        <!--            android:text="@string/mgDistrict"-->
+        <!--            android:textSize="24sp" />-->
 
-<!--        <Spinner-->
-<!--            android:id="@+id/spinnerHADistrict"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="45dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:background="@drawable/dropdown_spinner_custom"-->
-<!--            android:paddingLeft="5dp"-->
-<!--            android:paddingRight="5dp" />-->
+        <!--        <Spinner-->
+        <!--            android:id="@+id/spinnerHADistrict"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:background="@drawable/dropdown_spinner_custom"-->
+        <!--            android:paddingLeft="5dp"-->
+        <!--            android:paddingRight="5dp" />-->
 
         <TextView
             android:id="@+id/tvDescription"
@@ -83,8 +86,8 @@
             android:layout_gravity="center"
             android:paddingStart="30dp"
             android:text="@string/mgDescription"
-            android:textSize="24sp"
-            />
+            android:textColor="#000000"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/tfAHdescription"
@@ -99,7 +102,8 @@
             android:paddingStart="10dp"
             android:paddingLeft="5dp"
             android:paddingEnd="10dp"
-            android:paddingRight="5dp" />
+            android:paddingRight="5dp"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tvContact"
@@ -108,6 +112,7 @@
             android:layout_gravity="center"
             android:paddingStart="30dp"
             android:text="@string/mgContact"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
         <EditText
@@ -122,7 +127,8 @@
             android:inputType="number"
             android:paddingStart="10dp"
             android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            android:paddingRight="5dp"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tvEHCosts"
@@ -131,6 +137,7 @@
             android:layout_gravity="center"
             android:paddingStart="30dp"
             android:text="@string/Costs"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
         <EditText
@@ -144,7 +151,9 @@
             android:ems="10"
             android:hint="@string/breakfast"
             android:inputType="number"
-            android:paddingStart="10dp" />
+            android:paddingStart="10dp"
+            android:textColor="#000000" />
+
         <EditText
             android:id="@+id/tfEHclunch"
             android:layout_width="match_parent"
@@ -156,7 +165,9 @@
             android:ems="10"
             android:hint="@string/lunch"
             android:inputType="number"
-            android:paddingStart="10dp" />
+            android:paddingStart="10dp"
+            android:textColor="#000000" />
+
         <EditText
             android:id="@+id/tfEHcdinner"
             android:layout_width="match_parent"
@@ -168,7 +179,9 @@
             android:ems="10"
             android:hint="@string/dinner"
             android:inputType="number"
-            android:paddingStart="10dp" />
+            android:paddingStart="10dp"
+            android:textColor="#000000" />
+
         <EditText
             android:id="@+id/tfEHcsingleB"
             android:layout_width="match_parent"
@@ -180,7 +193,9 @@
             android:ems="10"
             android:hint="@string/singlebed"
             android:inputType="number"
-            android:paddingStart="10dp" />
+            android:paddingStart="10dp"
+            android:textColor="#000000" />
+
         <EditText
             android:id="@+id/tfEHcdoubleB"
             android:layout_width="match_parent"
@@ -192,7 +207,8 @@
             android:ems="10"
             android:hint="@string/doublebed"
             android:inputType="number"
-            android:paddingStart="10dp" />
+            android:paddingStart="10dp"
+            android:textColor="#000000" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

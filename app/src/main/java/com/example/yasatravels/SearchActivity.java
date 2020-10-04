@@ -71,6 +71,7 @@ public class SearchActivity extends AppCompatActivity {
 
         }
         else if (option == rbR.getText()) {
+            Log.i("searchwindow", "RidesSearching..");
             intent = new Intent(SearchActivity.this, ResultsRidesActivity.class);
 
         }
